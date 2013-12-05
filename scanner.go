@@ -30,6 +30,8 @@ func (s *Scanner) ScanBytes(b []byte) (*UserAgent, error) {
 	s.buf = b
 	s.buflen = len(b)
 	s.idx = 0
+	s.size = 0
+	s.prevstart = 0
 
 	// Iterate over each word in the byte slice.
 	for {

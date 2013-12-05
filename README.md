@@ -22,3 +22,14 @@ The `Scan()` function returns a `UserAgent` with the following string properties
 
 * `Browser` - `Chrome`, `Safari`, `Internet Explorer`, etc.
 
+
+
+## Performance
+
+On my laptop, I can execute almost 120,000 scans per second.
+Your mileage may vary.
+
+```sh
+$ go test -test.bench=.
+BenchmarkScan	  200000	      7931 ns/op
+```

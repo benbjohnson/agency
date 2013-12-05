@@ -18,9 +18,10 @@ var scantests = []struct {
 }
 
 func TestScan(t *testing.T) {
+	s := NewScanner()
 	for i, test := range scantests {
 		name := fmt.Sprintf("TEST LINE %d", i+1)
-		ua, _ := Scan(test.ua)
+		ua, _ := s.Scan(test.ua)
 		assert.Equal(t, ua.Type, test.typ, name)
 		assert.Equal(t, ua.Category, test.category, name)
 		assert.Equal(t, ua.Browser, test.browser, name)
@@ -29,7 +30,8 @@ func TestScan(t *testing.T) {
 
 
 func BenchmarkScan(b *testing.B) {
+	s := NewScanner()
 	for i := 0; i < b.N; i++ {
-		Scan("Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1667.0 Safari/537.36")
+		s.Scan("Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1667.0 Safari/537.36")
 	}
 }
