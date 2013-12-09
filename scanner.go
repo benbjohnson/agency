@@ -5,8 +5,11 @@ import (
 	"errors"
 	"unicode"
 	"unicode/utf8"
+
+	"github.com/benbjohnson/agency/data"
 )
 
+// eof is an internal EOF marker.
 var eof = errors.New("eof")
 
 // Scanner is a user agent tokenizer.
@@ -24,7 +27,7 @@ func NewScanner() *Scanner {
 	return &Scanner{}
 }
 
-// Scan scans a user agent string for category, type and browser.
+// Scan scans a user agent string for device information.
 func (s *Scanner) ScanBytes(b []byte) (*UserAgent, error) {
 	var ua = new(UserAgent)
 	s.buf = b
@@ -42,26 +45,15 @@ func (s *Scanner) ScanBytes(b []byte) (*UserAgent, error) {
 			return nil, err
 		}
 
-		if ua.Type == "" {
-			ua.Type = s.match(types, unigram, bigram)
-		}
-		if ua.Category == "" {
-			ua.Category = s.match(categories, unigram, bigram)
-		}
 		if ua.Browser == "" {
-			ua.Browser = s.match(browsers, unigram, bigram)
+			ua.Browser = s.match(data.Browsers(), unigram, bigram)
 		}
-	}
-
-	// Default to desktop if nothing else was found.
-	if ua.Category == "" {
-		ua.Category = "Desktop"
 	}
 
 	return ua, nil
 }
 
-// Scan scans a user agent string for category, type and browser.
+// Scan scans a user agent string for device information.
 func (s *Scanner) Scan(str string) (*UserAgent, error) {
 	return s.ScanBytes([]byte(str))
 }

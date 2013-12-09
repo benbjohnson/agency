@@ -1,7 +1,8 @@
 package agency
 
+// UserAgent represents the results from a call to Scan().
 type UserAgent struct {
-	Type     string
-	Category string
-	Browser  string
+	Browser string
+	Device  string
+	OS      string
 }
