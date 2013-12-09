@@ -18,7 +18,7 @@ func Browsers() []*Browser {
 		panic("fixture parse error (browser.csv): " + err.Error())
 	}
 
-	items := make([]*Browser, 1)
+	items := make([]*Browser, 0)
 	for _, record := range records {
 		items = append(items, &Browser{record[0], record[1], record[2]})
 	}

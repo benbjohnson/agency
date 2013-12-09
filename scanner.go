@@ -20,11 +20,14 @@ type Scanner struct {
 	idx    int
 	size   int
 	prevstart int
+	browsers []*data.Browser
 }
 
 // NewScanner creates a new user agent scanner.
 func NewScanner() *Scanner {
-	return &Scanner{}
+	return &Scanner{
+		browsers: make([]*data.Browser, data.MaxRank),
+	}
 }
 
 // Scan scans a user agent string for device information.
@@ -32,9 +35,7 @@ func (s *Scanner) ScanBytes(b []byte) (*UserAgent, error) {
 	var ua = new(UserAgent)
 	s.buf = b
 	s.buflen = len(b)
-	s.idx = 0
-	s.size = 0
-	s.prevstart = 0
+	s.reset()
 
 	// Iterate over each word in the byte slice.
 	for {
@@ -45,8 +46,17 @@ func (s *Scanner) ScanBytes(b []byte) (*UserAgent, error) {
 			return nil, err
 		}
 
-		if ua.Browser == "" {
-			ua.Browser = s.match(data.Browsers(), unigram, bigram)
+		if ua.Browser.Type == "" {
+			s.matchBrowser(unigram, bigram)
+		}
+	}
+
+	// Find browser by rank level.
+	for _, browser := range s.browsers {
+		if browser != nil {
+			ua.Browser.Type = browser.Type
+			ua.Browser.Name = browser.Name
+			break
 		}
 	}
 
@@ -114,16 +124,24 @@ func (s *Scanner) readNgrams() ([]byte, []byte, error) {
 	return unigram, bigram, nil
 }
 
-// match checks a unigram and bigram against a list of values.
-func (s *Scanner) match(m map[string][][]byte, unigram []byte, bigram []byte) string {
-	for key, values := range m {
-		for _, value := range values {
-			if bytes.Equal(unigram, value) || bytes.Equal(bigram, value) {
-				return key
-			}
+// match checks a unigram and bigram against the list of browser tokens.
+func (s *Scanner) matchBrowser(unigram []byte, bigram []byte) {
+	for _, browser := range data.Browsers {
+		if bytes.Equal(unigram, browser.Token) || bytes.Equal(bigram, browser.Token) {
+			s.browsers[browser.Rank] = browser
 		}
 	}
-	return ""
+}
+
+// reset re-initializes the state of the scanner.
+func (s *Scanner) reset() {
+	s.idx = 0
+	s.size = 0
+	s.prevstart = 0
+
+	for i, _ := range s.browsers {
+		s.browsers[i] = nil
+	}
 }
 
 // Scan extracts properties from a user agent byte slice.

@@ -11,10 +11,13 @@ import (
 func TestScanBrowser(t *testing.T) {
 	s := NewScanner()
 	for i, browser := range fixtures.Browsers() {
-		lineNum := fmt.Sprintf("LINE#%d", i+1)
+		lineNum := fmt.Sprintf("Line #%d", i+1)
 		ua, _ := s.Scan(browser.UserAgentString)
-		assert.Equal(t, ua.Browser, browser.Name, lineNum)
-		assert.Equal(t, ua.BrowserType, browser.Type, lineNum)
+		isname := assert.Equal(t, ua.Browser.Name, browser.Name, lineNum)
+		istype := assert.Equal(t, ua.Browser.Type, browser.Type, lineNum)
+		if !isname || !istype {
+			break
+		}
 	}
 }
 

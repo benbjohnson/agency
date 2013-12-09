@@ -13,13 +13,13 @@ bindata: data fixtures
 data: $(DATABIN)
 
 data/%.csv.go: data/%.csv
-	rm -f data/$*.go
+	rm -f data/$*.csv.go
 	cat data/$*.csv | go-bindata -func $(subst .,_,$*)_csv -pkg data | gofmt > data/$*.csv.go
 
 fixtures: $(FIXBIN)
 
 fixtures/%.csv.go: fixtures/%.csv
-	rm -f fixtures/$*.go
+	rm -f fixtures/$*.csv.go
 	cat fixtures/$*.csv | go-bindata -func $(subst .,_,$*)_csv -pkg fixtures | gofmt > fixtures/$*.csv.go
 
 clean:
