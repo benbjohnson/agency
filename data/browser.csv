@@ -1,47 +1,997 @@
-"0","Browser","3DS Browser","Nintendo 3DS"
-"0","Browser","Abolimba","http://www.Abolimba.de"
-"0","Browser","Abolimba","Abolimba"
-"0","Browser","ABrowse","ABrowse"
-"0","Browser","Acoo Browser","Acoo"
-"0","Browser","Alienforce","Alienforce"
-"0","Browser","Amaya","amaya"
-"0","Browser","Amiga Aweb","Amiga-AWeb"
-"0","Browser","Amiga Voyager","AmigaVoyager"
-"0","Browser","Amigo","MRCHROME"
-"0","Browser","AOL Explorer","AOL"
-"0","Browser","AOL Explorer","AOLBuild"
-"0","Browser","Arora","Arora"
-"0","Browser","Avant Browser","Avant Browser"
-"0","Browser","Avant Browser","AvantBrowser"
-"0","Browser","Baidu Browser","baidubrowser"
-"0","Browser","Beamrise","Beamrise"
-"0","Browser","Beonex","Beonex"
-"0","Browser","Blackbird","Blackbird"
-"0","Browser","BlackHawk","BlackHawk"
-"0","Browser","Bolt","Bolt"
-"0","Browser","Bolt","BOLT"
-"0","Browser","BrowseX","BrowseX"
-"0","Browser","Browzar","Browzar"
-"0","Browser","Bunjalloo","Bunjalloo"
-"0","Browser","Camino","Camino"
-"0","Browser","Camino","Chimera"
-"0","Browser","Charon","Charon"
-"0","Browser","Cheshire","Cheshire"
-"1","Browser","Chrome","Chrome"
-"0","Browser","Chromium","Chromium"
-"0","Browser","Coast","Coast"
-"0","Browser","Columbus","Columbus"
-"0","Browser","CometBird","CometBird"
-"0","Browser","Comodo Dragon","Comodo_Dragon"
-"0","Browser","Conkeror","Conkeror"
-"0","Browser","Conkeror","conkeror"
-"0","Browser","CoolNovo","CoolNovo"
-"0","Browser","CoRom","CoRom"
-"0","Browser","Crazy Browser","Crazy Browser"
-"0","Browser","Deepnet Explorer","Deepnet Explorer"
-"0","Browser","Demeter","Demeter"
-"0","Browser","DeskBrowse","DeskBrowse"
-"0","Browser","Dillo","Dillo"
-"0","Browser","DocZilla","DocZilla"
-"0","Browser","Dooble","Dooble"
-"0","Browser","Dooble","Dooble"
+0,Browser,3DS Browser,Nintendo 3DS
+0,Browser,ABrowse,ABrowse
+0,Browser,AOL Explorer,AOL
+0,Browser,AOL Explorer,AOLBuild
+0,Browser,Abolimba,Abolimba
+0,Browser,Abolimba,http://www.Abolimba.de
+0,Browser,Acoo Browser,Acoo
+0,Browser,Alienforce,Alienforce
+0,Browser,Amaya,amaya
+0,Browser,Amiga Aweb,Amiga-AWeb
+0,Browser,Amiga Voyager,AmigaVoyager
+0,Browser,Amigo,MRCHROME
+0,Browser,Arora,Arora
+0,Browser,Avant Browser,Avant Browser
+0,Browser,Avant Browser,AvantBrowser
+0,Browser,Baidu Browser,baidubrowser
+0,Browser,Beamrise,Beamrise
+0,Browser,Beonex,Beonex
+0,Browser,BlackHawk,BlackHawk
+0,Browser,Blackbird,Blackbird
+0,Browser,Bolt,BOLT
+0,Browser,Bolt,Bolt
+0,Browser,BrowseX,BrowseX
+0,Browser,Browzar,Browzar
+0,Browser,Bunjalloo,Bunjalloo
+0,Browser,Camino,Camino
+0,Browser,Camino,Chimera
+0,Browser,Charon,Charon
+0,Browser,Cheshire,Cheshire
+1,Browser,Chrome,Chrome
+0,Browser,Chromium,Chromium
+0,Browser,CoRom,CoRom
+0,Browser,Coast,Coast
+0,Browser,Columbus,Columbus
+0,Browser,CometBird,CometBird
+0,Browser,Comodo Dragon,Comodo_Dragon
+0,Browser,Conkeror,Conkeror
+0,Browser,Conkeror,conkeror
+0,Browser,CoolNovo,CoolNovo
+0,Browser,Crazy Browser,Crazy Browser
+0,Browser,DPlus,DPlus
+0,Browser,Deepnet Explorer,Deepnet Explorer
+0,Browser,Demeter,Demeter
+0,Browser,DeskBrowse,DeskBrowse
+0,Browser,Dillo,Dillo
+0,Browser,DocZilla,DocZilla
+0,Browser,Dooble,Dooble
+0,Browser,Edbrowse,edbrowse
+0,Browser,Element Browser,Element Browser
+0,Browser,Elinks,ELinks
+0,Browser,Enigma browser,Enigma Browser
+0,Browser,Epic,Epic
+0,Browser,Epiphany,Epiphany
+0,Browser,Espial TV Browser,Escape
+0,Browser,Espial TV Browser,Espial
+0,Browser,Firebird,Firebird
+1,Browser,Firefox,Firefox
+1,Browser,Firefox,BonEcho
+1,Browser,Firefox,GranParadiso
+1,Browser,Firefox,Lorentz
+1,Browser,Firefox,Minefield
+1,Browser,Firefox,Namoroka
+1,Browser,Firefox,Shiretoko
+0,Browser,Fireweb Navigator,Fireweb Navigator
+0,Browser,Flock,Flock
+0,Browser,Fluid,Fluid
+0,Browser,Galeon,Galeon
+0,Browser,GlobalMojo,GlobalMojo
+0,Browser,GreenBrowser,GreenBrowser
+0,Browser,HotJava,HotJava
+0,Browser,HotJava,Sun
+0,Browser,Hv3,Hv3
+0,Browser,Hydra Browser,Hydra Browser
+0,Browser,IBrowse,IBrowse
+0,Browser,ICE browser,ICE browser
+0,Browser,ICE browser,ICE Browser
+0,Browser,ICE browser,ICEbrowser
+1,Browser,IE,IE
+1,Browser,IE,MSIE
+0,Browser,IceApe,IceApe
+0,Browser,IceApe,Iceape
+0,Browser,IceCat,IceCat
+0,Browser,IceDragon,IceDragon
+0,Browser,IceWeasel,IceWeasel
+0,Browser,IceWeasel,Iceweasel
+0,Browser,InternetSurfboard,InternetSurfboard
+0,Browser,Iron,Iron
+0,Browser,K-Meleon,K-Meleon
+0,Browser,K-Ninja,K-Ninja
+0,Browser,KKman,KKman
+0,Browser,KKman,KKman2.0
+0,Browser,KKman,KKman3.0
+0,Browser,KKman,KKMAN3.2
+0,Browser,Kapiko,Kapiko
+0,Browser,Kazehakase,Kazehakase
+0,Browser,Kirix Strata,Strata
+0,Browser,Konqueror,Konqueror
+0,Browser,Kylo,Kylo
+0,Browser,LBrowser,LBrowser
+0,Browser,LG Web Browser,LG Browser
+0,Browser,Links,Links
+0,Browser,Lobo,Lobo
+0,Browser,Lunascape,Lunascape
+0,Browser,Lunascape,iLunascape
+0,Browser,Lynx,Lynx
+0,Browser,Madfox,Madfox
+0,Browser,Maple browser,SMART-TV
+0,Browser,Maxthon,Maxthon
+0,Browser,Maxthon,MAXTHON
+0,Browser,Maxthon,MyIE2
+0,Browser,Midori,Midori
+0,Browser,Mini Browser,MiniBrowser
+3,Browser,Mozilla,Mozilla
+0,Browser,Multi-Browser XP,Multi-Browser
+0,Browser,MultiZilla,MultiZilla
+0,Browser,My Internet Browser,MyIBrow
+0,Browser,My Internet Browser,myibrow
+0,Browser,NCSA Mosaic,NCSA Mosaic
+0,Browser,NCSA Mosaic,NCSA_Mosaic
+0,Browser,NetBox,Netbox
+0,Browser,NetBox,netbox
+0,Browser,NetBox,TVMate
+0,Browser,NetCaptor,NetCaptor
+0,Browser,NetPositive,NetPositive
+0,Browser,NetSurf,NetSurf
+1,Browser,Netscape Navigator,Netscape6
+1,Browser,Netscape Navigator,Netscape
+1,Browser,Netscape Navigator,Navigator
+0,Browser,Nintendo Browser,NintendoBrowser
+0,Browser,OWB,Origyn
+0,Browser,Off By One,OffByOne
+0,Browser,OmniWeb,OmniWeb
+0,Browser,Opera,Opera
+0,Browser,Opera,OPR
+0,Browser,Orca,Orca
+0,Browser,Oregano,Oregano
+0,Browser,PS4 Web browser,PS4 Web browser
+0,Browser,Pale Moon,Palemoon
+0,Browser,Patriott,Patriott
+0,Browser,Phaseout,Phaseout
+0,Browser,Phoenix (old name for Firefox),Phoenix (old name for Firefox)
+0,Browser,Polarity,Polarity
+0,Browser,QtWeb,QtWeb
+0,Browser,QupZilla,QupZilla
+0,Browser,Rekonq,Rekonq
+0,Browser,Roccat browser,Roccat browser
+0,Browser,RockMelt,RockMelt
+0,Browser,Ryouko,Ryouko
+0,Browser,SaaYaa Explorer,SaaYaa Explorer
+2,Browser,Safari,Safari
+0,Browser,SeaMonkey,SeaMonkey
+0,Browser,Shiira,Shiira
+0,Browser,SiteKiosk,SiteKiosk
+0,Browser,SkipStone,SkipStone
+0,Browser,Sleipnir,Sleipnir
+0,Browser,SlimBoat,SlimBoat
+0,Browser,SlimBrowser,SlimBrowser
+0,Browser,Sogou Explorer,Sogou Explorer
+0,Browser,Stainless,Stainless
+0,Browser,Sundance,Sundance
+0,Browser,Sundial,Sundial
+0,Browser,Sunrise,Sunrise
+0,Browser,Superbird,Superbird
+0,Browser,Surf,Surf
+0,Browser,Swiftfox,Swiftfox
+0,Browser,Swiftweasel,Swiftweasel
+0,Browser,TT Explorer,TT Explorer
+0,Browser,TenFourFox,TenFourFox
+0,Browser,TheWorld Browser,TheWorld Browser
+0,Browser,Tjusig,Tjusig
+0,Browser,UltraBrowser ,UltraBrowser 
+0,Browser,Usejump,Usejump
+0,Browser,Uzbl,Uzbl
+0,Browser,Vonkeror,Vonkeror
+0,Browser,WebRender,WebRender
+0,Browser,Webian Shell,Webian Shell
+0,Browser,Weltweitimnetz Browser,Weltweitimnetz Browser
+0,Browser,WorldWideWeb,WorldWideWeb
+0,Browser,Wyzo,Wyzo
+0,Browser,X-Smiles,X-Smiles
+0,Browser,YRC Weblink,YRC Weblink
+0,Browser,Yandex.Browser,Yandex.Browser
+0,Browser,ZipZap,ZipZap
+0,Browser,iCab,iCab
+0,Browser,iRider,iRider
+0,Browser,lolifox,lolifox
+0,Browser,retawq,retawq
+0,Browser,w3m,w3m
+0,Browser,wKiosk,wKiosk
+0,Browser,zBrowser,zBrowser
+0,Email client,AirMail,AirMail
+0,Email client,Apple Mail,Apple Mail
+0,Email client,Barca,Barca
+0,Email client,Eudora,Eudora
+0,Email client,GcMail,GcMail
+0,Email client,Lotus Notes,Lotus Notes
+0,Email client,Outlook 2007,Outlook 2007
+0,Email client,Outlook 2010,Outlook 2010
+0,Email client,Outlook 2013,Outlook 2013
+0,Email client,PocoMail,PocoMail
+0,Email client,Postbox,Postbox
+0,Email client,Shredder,Shredder
+0,Email client,Sparrow,Sparrow
+0,Email client,Spicebird,Spicebird
+0,Email client,The Bat!,The Bat!
+0,Email client,Thunderbird,Thunderbird
+0,Email client,Windows Live Mail,Windows Live Mail
+0,Feed Reader,Abilon,Abilon
+0,Feed Reader,Akregator,Akregator
+0,Feed Reader,Apple-PubSub,Apple-PubSub
+0,Feed Reader,Awasu,Awasu
+0,Feed Reader,BlogBridge,BlogBridge
+0,Feed Reader,Bloglines,Bloglines
+0,Feed Reader,CPG Dragonfly RSS Module,CPG Dragonfly RSS Module
+0,Feed Reader,Fastladder FeedFetcher,Fastladder FeedFetcher
+0,Feed Reader,Feed Viewer,Feed Viewer
+0,Feed Reader,FeedDemon,FeedDemon
+0,Feed Reader,Feedfetcher-Google,Feedfetcher-Google
+0,Feed Reader,GreatNews,GreatNews
+0,Feed Reader,Gregarius,Gregarius
+0,Feed Reader,IE RSS reader,IE RSS reader
+0,Feed Reader,Liferea,Liferea
+0,Feed Reader,NFReader,NFReader
+0,Feed Reader,NetNewsWire,NetNewsWire
+0,Feed Reader,Netvibes feed reader,Netvibes feed reader
+0,Feed Reader,NewsBreak,NewsBreak
+0,Feed Reader,NewsFox,NewsFox
+0,Feed Reader,NewsGatorOnline,NewsGatorOnline
+0,Feed Reader,Newsbeuter,Newsbeuter
+0,Feed Reader,Omea Reader,Omea Reader
+0,Feed Reader,RSS Menu,RSS Menu
+0,Feed Reader,RSS Popper,RSS Popper
+0,Feed Reader,RSSOwl,RSSOwl
+0,Feed Reader,Reeder,Reeder
+0,Feed Reader,Rss Bandit,Rss Bandit
+0,Feed Reader,Safari RSS reader,Safari RSS reader
+0,Feed Reader,Sage,Sage
+0,Feed Reader,Seznam RSS reader,Seznam RSS reader
+0,Feed Reader,SharpReader,SharpReader
+0,Feed Reader,Trileet NewsRoom,Trileet NewsRoom
+0,Feed Reader,YahooFeedSeeker,YahooFeedSeeker
+0,Feed Reader,YeahReader,YeahReader
+0,Feed Reader,iCatcher!,iCatcher!
+0,Library,Adobe AIR runtime,Adobe AIR runtime
+0,Library,Anemone,Anemone
+0,Library,Apache-HttpClient,Apache-HttpClient
+0,Library,BinGet,BinGet
+0,Library,CFNetwork,CFNetwork
+0,Library,Chilkat HTTP .NET,Chilkat HTTP .NET
+0,Library,EventMachine,EventMachine
+0,Library,Evolution/Camel.Stream,Evolution/Camel.Stream
+0,Library,Feed::Find,Feed::Find
+0,Library,FeedParser,FeedParser
+0,Library,GStreamer,GStreamer
+0,Library,Go http package,Go http package
+0,Library,HTMLayout,HTMLayout
+0,Library,HTTP_Request2,HTTP_Request2
+0,Library,IXR lib,IXR lib
+0,Library,Indy Library,Indy Library
+0,Library,Jakarta Commons-HttpClient,Jakarta Commons-HttpClient
+4,Library,Java,Java
+0,Library,LWP::Simple,LWP::Simple
+0,Library,LibSoup,LibSoup
+0,Library,MagpieRSS,MagpieRSS
+0,Library,Mechanize,Mechanize
+0,Library,PEAR HTTP_Request,PEAR HTTP_Request
+0,Library,PHP OpenID library,PHP OpenID library
+0,Library,PHPcrawl,PHPcrawl
+0,Library,POE-Component-Client-HTTP,POE-Component-Client-HTTP
+0,Library,PycURL,PycURL
+0,Library,Python-requests,Python-requests
+0,Library,Python-urllib,Python-urllib
+0,Library,Python-webchecker,Python-webchecker
+0,Library,ROME library,ROME library
+0,Library,RestSharp,RestSharp
+0,Library,SimplePie,SimplePie
+0,Library,Snoopy,Snoopy
+0,Library,Summer,Summer
+0,Library,Typhoeus,Typhoeus
+0,Library,WWW::Mechanize,WWW::Mechanize
+0,Library,WinHTTP,WinHTTP
+0,Library,XML-RPC for PHP,XML-RPC for PHP
+0,Library,XML-RPC for Ruby,XML-RPC for Ruby
+0,Library,Zend_Http_Client,Zend_Http_Client
+0,Library,cURL,cURL
+0,Library,libwww-perl,libwww-perl
+0,Library,urlgrabber,urlgrabber
+0,Library,xine,xine
+0,Mobile Browser,Android browser,Android browser
+0,Mobile Browser,Atomic Web Browser,Atomic Web Browser
+0,Mobile Browser,BlackBerry Browser,BlackBerry Browser
+0,Mobile Browser,Blazer,Blazer
+0,Mobile Browser,Chrome Mobile,Chrome Mobile
+0,Mobile Browser,Dolphin,Dolphin
+0,Mobile Browser,Doris,Doris
+0,Mobile Browser,GO Browser,GO Browser
+0,Mobile Browser,IE Mobile,IE Mobile
+0,Mobile Browser,Jasmine,Jasmine
+0,Mobile Browser,Kindle Browser,Kindle Browser
+0,Mobile Browser,Maxthon mobile,Maxthon mobile
+0,Mobile Browser,MicroB,MicroB
+0,Mobile Browser,Minimo,Minimo
+0,Mobile Browser,Mobile Firefox,Mobile Firefox
+0,Mobile Browser,Mobile Safari,Mobile Safari
+0,Mobile Browser,Motorola Internet Browser,Motorola Internet Browser
+0,Mobile Browser,NetFront Life,NetFront Life
+0,Mobile Browser,NetFront,NetFront
+0,Mobile Browser,NineSky,NineSky
+0,Mobile Browser,Nokia Web Browser,Nokia Web Browser
+0,Mobile Browser,ONE Browser,ONE Browser
+0,Mobile Browser,Obigo,Obigo
+0,Mobile Browser,Openwave Mobile Browser,Openwave Mobile Browser
+0,Mobile Browser,Opera Mini,Opera Mini
+0,Mobile Browser,Opera Mobile,Opera Mobile
+0,Mobile Browser,PS Vita browser,PS Vita browser
+0,Mobile Browser,Palm Pre web browser,Palm Pre web browser
+0,Mobile Browser,Palm WebPro,Palm WebPro
+0,Mobile Browser,Polaris,Polaris
+0,Mobile Browser,Puffin,Puffin
+0,Mobile Browser,QQbrowser,QQbrowser
+0,Mobile Browser,SEMC Browser,SEMC Browser
+0,Mobile Browser,Silk,Silk
+0,Mobile Browser,Skyfire,Skyfire
+0,Mobile Browser,TeaShark,TeaShark
+0,Mobile Browser,Tear,Tear
+0,Mobile Browser,Tizen Browser,Tizen Browser
+0,Mobile Browser,UC Browser,UC Browser
+0,Mobile Browser,Ubuntu web browser,Ubuntu web browser
+0,Mobile Browser,Yandex.Browser mobile,Yandex.Browser mobile
+0,Mobile Browser,uZard Web,uZard Web
+0,Mobile Browser,wOSBrowser,wOSBrowser
+0,Multimedia Player,Banshee,Banshee
+0,Multimedia Player,Boxxe,Boxxe
+0,Multimedia Player,CorePlayer,CorePlayer
+0,Multimedia Player,FlyCast,FlyCast
+0,Multimedia Player,GOM Player,GOM Player
+0,Multimedia Player,MPlayer,MPlayer
+0,Multimedia Player,MPlayer2,MPlayer2
+0,Multimedia Player,Miro,Miro
+0,Multimedia Player,Plex Media Center,Plex Media Center
+0,Multimedia Player,Pocket Tunes,Pocket Tunes
+0,Multimedia Player,Public Radio Player,Public Radio Player
+0,Multimedia Player,QuickTime,QuickTime
+0,Multimedia Player,RSS Radio,RSS Radio
+0,Multimedia Player,Songbird,Songbird
+0,Multimedia Player,SubStream,SubStream
+0,Multimedia Player,VLC media player,VLC media player
+0,Multimedia Player,Winamp for Android,Winamp for Android
+0,Multimedia Player,Windows Media Player,Windows Media Player
+0,Multimedia Player,XBMC,XBMC
+0,Multimedia Player,XMPlay,XMPlay
+0,Multimedia Player,foobar2000,foobar2000
+0,Multimedia Player,iTunes,iTunes
+0,Offline Browser,AvantGo,AvantGo
+0,Offline Browser,Axel,Axel
+0,Offline Browser,BlueCrab,BlueCrab
+0,Offline Browser,GetRight,GetRight
+0,Offline Browser,HTTrack,HTTrack
+0,Offline Browser,JoBo,JoBo
+0,Offline Browser,Offline Explorer,Offline Explorer
+0,Offline Browser,SiteSucker,SiteSucker
+0,Offline Browser,SuperBot,SuperBot
+0,Offline Browser,Teleport Pro,Teleport Pro
+0,Offline Browser,WebCopier,WebCopier
+0,Offline Browser,WebStripper,WebStripper
+0,Offline Browser,WebZIP,WebZIP
+0,Offline Browser,Wget,Wget
+0,Offline Browser,Xaldon WebSpider,Xaldon WebSpider
+0,Offline Browser,iSiloX,iSiloX
+0,Offline Browser,iSiloXC,iSiloXC
+0,Offline Browser,webfetch,webfetch
+0,Other,A1 Sitemap Generator,A1 Sitemap Generator
+0,Other,AB (Apache Bench),AB (Apache Bench)
+0,Other,ActiveXperts Network Monitor,ActiveXperts Network Monitor
+0,Other,Apache Synapse,Apache Synapse
+0,Other,Apache internal dummy connection,Apache internal dummy connection
+0,Other,Atomic Email Hunter,Atomic Email Hunter
+0,Other,Bookdog,Bookdog
+0,Other,BookmarkTracker,BookmarkTracker
+0,Other,BrownRecluse,BrownRecluse
+0,Other,BrowserEmulator,BrowserEmulator
+0,Other,Claws Mail GtkHtml2 plugin,Claws Mail GtkHtml2 plugin
+0,Other,Cyberduck,Cyberduck
+0,Other,Dell Web Monitor,Dell Web Monitor
+0,Other,DownloadStudio,DownloadStudio
+0,Other,Funambol Mozilla Sync Client,Funambol Mozilla Sync Client
+0,Other,Funambol Outlook Sync Client,Funambol Outlook Sync Client
+0,Other,GSiteCrawler,GSiteCrawler
+0,Other,GnomeVFS,GnomeVFS
+0,Other,GoldenPod,GoldenPod
+0,Other,Google App Engine,Google App Engine
+0,Other,Google Earth,Google Earth
+0,Other,Google Friend Connect,Google Friend Connect
+0,Other,Google Listen,Google Listen
+0,Other,Google Rich Snippets Testing Tool,Google Rich Snippets Testing Tool
+0,Other,Google Wireless Transcoder,Google Wireless Transcoder
+0,Other,HTML2JPG,HTML2JPG
+0,Other,HTTP nagios plugin,HTTP nagios plugin
+0,Other,Holmes,Holmes
+0,Other,JS-Kit/Echo,JS-Kit/Echo
+0,Other,Jamcast,Jamcast
+0,Other,LFTP,LFTP
+0,Other,LeechCraft,LeechCraft
+0,Other,LinkbackPlugin for Laconica,LinkbackPlugin for Laconica
+0,Other,Microsoft Office Existence Discovery,Microsoft Office Existence Discovery
+0,Other,Microsoft WebDAV client,Microsoft WebDAV client
+0,Other,NetFront Mobile Content Viewer,NetFront Mobile Content Viewer
+0,Other,Nokia SyncML Client,Nokia SyncML Client
+0,Other,Novell BorderManager,Novell BorderManager
+0,Other,PHP,PHP
+0,Other,PRTG Network Monitor,PRTG Network Monitor
+0,Other,Paparazzi!,Paparazzi!
+0,Other,Pattern,Pattern
+0,Other,PhantomJS,PhantomJS
+0,Other,Podkicker,Podkicker
+0,Other,Powermarks,Powermarks
+0,Other,Prism,Prism
+0,Other,Radio Downloader,Radio Downloader
+0,Other,Seznam WAP Proxy,Seznam WAP Proxy
+0,Other,Siege,Siege
+0,Other,SmartBrowserPlugin for TC,SmartBrowserPlugin for TC
+0,Other,Tulip Chain,Tulip Chain
+0,Other,Vuze,Vuze
+0,Other,Web-sniffer,Web-sniffer
+0,Other,WebCollage,WebCollage
+0,Other,WinPodder,WinPodder
+0,Other,WordPress pingback,WordPress pingback
+0,Other,gPodder,gPodder
+0,Other,iGetter,iGetter
+0,Other,iGooMap,iGooMap
+0,Other,iVideo,iVideo
+0,Other,muCommander,muCommander
+0,Other,webfs,webfs
+0,Useragent Anonymizer,Anonymouse.org,Anonymouse.org
+0,Validator,2Bone LinkChecker,2Bone LinkChecker
+0,Validator,CSE HTML Validator,CSE HTML Validator
+0,Validator,Checkbot,Checkbot
+0,Validator,Cynthia,Cynthia
+0,Validator,FeedValidator,FeedValidator
+0,Validator,HTMLParser,HTMLParser
+0,Validator,LinkChecker,LinkChecker
+0,Validator,LinkExaminer,LinkExaminer
+0,Validator,LinkWalker,LinkWalker
+0,Validator,Multipage Validator,Multipage Validator
+0,Validator,P3P Validator,P3P Validator
+0,Validator,PHP link checker,PHP link checker
+0,Validator,REL Link Checker Lite,REL Link Checker Lite
+0,Validator,Screaming Frog SEO Spider,Screaming Frog SEO Spider
+0,Validator,Validator.nu,Validator.nu
+0,Validator,W3C CSS Validator,W3C CSS Validator
+0,Validator,W3C Checklink,W3C Checklink
+0,Validator,W3C Validator,W3C Validator
+0,Validator,W3C mobileOK Checker,W3C mobileOK Checker
+0,Validator,WDG CSSCheck,WDG CSSCheck
+0,Validator,WDG Page Valet,WDG Page Valet
+0,Validator,WDG Validator,WDG Validator
+0,Validator,Xenu,Xenu
+0,Validator,anw HTMLChecker,anw HTMLChecker
+0,Validator,anw LoadControl,anw LoadControl
+0,Wap Browser,Klondike,Klondike
+0,Wap Browser,WapTiger,WapTiger
+0,Wap Browser,WinWap,WinWap
+0,robot,192.comAgent,192.comAgent
+0,robot,200PleaseBot,200PleaseBot
+0,robot,360Spider,360Spider
+0,robot,4seohuntBot,4seohuntBot
+0,robot,50.nu,50.nu
+0,robot,80legs,80legs
+0,robot,A6-Indexer,A6-Indexer
+0,robot,AMZNKAssocBot,AMZNKAssocBot
+0,robot,ASAHA Search Engine Turkey,ASAHA Search Engine Turkey
+0,robot,Aboundexbot,Aboundexbot
+0,robot,AboutUsBot,AboutUsBot
+0,robot,Abrave Spider,Abrave Spider
+0,robot,Accelobot,Accelobot
+0,robot,Accoona-AI-Agent,Accoona-AI-Agent
+0,robot,AcoonBot,AcoonBot
+0,robot,Acorn,Acorn
+0,robot,AddThis.com,AddThis.com
+0,robot,AdsBot-Google,AdsBot-Google
+0,robot,AhrefsBot,AhrefsBot
+0,robot,Almaden,Almaden
+0,robot,Amagit.COM,Amagit.COM
+0,robot,Amfibibot,Amfibibot
+0,robot,AntBot,AntBot
+0,robot,Apercite,Apercite
+0,robot,AportWorm,AportWorm
+0,robot,AraBot,AraBot
+0,robot,Ask Jeeves/Teoma,Ask Jeeves/Teoma
+0,robot,Automattic Analytics Crawler,Automattic Analytics Crawler
+0,robot,BDFetch,BDFetch
+0,robot,BLEXBot,BLEXBot
+0,robot,BUbiNG,BUbiNG
+0,robot,BabalooSpider,BabalooSpider
+0,robot,BacklinkCrawler,BacklinkCrawler
+0,robot,Bad-Neighborhood,Bad-Neighborhood
+0,robot,Baiduspider,Baiduspider
+0,robot,BecomeBot,BecomeBot
+0,robot,BegunAdvertising,BegunAdvertising
+0,robot,Bigsearch.ca,Bigsearch.ca
+0,robot,BingPreview,BingPreview
+0,robot,Blaiz-Bee,Blaiz-Bee
+0,robot,Blekkobot,Blekkobot
+0,robot,BlinkaCrawler,BlinkaCrawler
+0,robot,BlogPulse,BlogPulse
+0,robot,Bloggsi,Bloggsi
+0,robot,BotOnParade,BotOnParade
+0,robot,Browsershots,Browsershots
+0,robot,Butterfly,Butterfly
+0,robot,BuzzRankingBot,BuzzRankingBot
+0,robot,CCBot,CCBot
+0,robot,CCResearchBot,CCResearchBot
+0,robot,CJB.NET Proxy,CJB.NET Proxy
+0,robot,CMS Crawler,CMS Crawler
+0,robot,CamontSpider,CamontSpider
+0,robot,CareerBot,CareerBot
+0,robot,Castabot,Castabot
+0,robot,CatchBot,CatchBot
+0,robot,CazoodleBot,CazoodleBot
+0,robot,ChangeDetection,ChangeDetection
+0,robot,Charlotte,Charlotte
+0,robot,CirrusExplorer,CirrusExplorer
+0,robot,City4you,City4you
+0,robot,CligooRobot,CligooRobot
+0,robot,CliqzBot,CliqzBot
+0,robot,Cliqzbot,Cliqzbot
+0,robot,CloudServerMarketSpider,CloudServerMarketSpider
+0,robot,Combine,Combine
+0,robot,CompSpyBot,CompSpyBot
+0,robot,ConveraCrawler,ConveraCrawler
+0,robot,CorpusCrawler,CorpusCrawler
+0,robot,Covario-IDS,Covario-IDS
+0,robot,Crawler4j,Crawler4j
+0,robot,Crowsnest,Crowsnest
+0,robot,Curious George,Curious George
+0,robot,DBLBot,DBLBot
+0,robot,DCPbot,DCPbot
+0,robot,DKIMRepBot,DKIMRepBot
+0,robot,DNS-Digger-Explorer,DNS-Digger-Explorer
+0,robot,DataFountains,DataFountains
+0,robot,DataparkSearch,DataparkSearch
+0,robot,Daumoa,Daumoa
+0,robot,DealGates Bot,DealGates Bot
+0,robot,DepSpid,DepSpid
+0,robot,Dlvr.it/1.0,Dlvr.it/1.0
+0,robot,DomainDB,DomainDB
+0,robot,Dot TK - spider,Dot TK - spider
+0,robot,DotBot,DotBot
+0,robot,DripfeedBot,DripfeedBot
+0,robot,DuckDuckBot,DuckDuckBot
+0,robot,DuckDuckPreview,DuckDuckPreview
+0,robot,EDI,EDI
+0,robot,EasouSpider,EasouSpider
+0,robot,EasyBib AutoCite,EasyBib AutoCite
+0,robot,EdisterBot,EdisterBot
+0,robot,EnaBot,EnaBot
+0,robot,Enterprise_Search,Enterprise_Search
+0,robot,Esribot,Esribot
+0,robot,EuripBot,EuripBot
+0,robot,Eurobot,Eurobot
+0,robot,EventGuruBot,EventGuruBot
+0,robot,EvriNid,EvriNid
+0,robot,ExB Language Crawler,ExB Language Crawler
+0,robot,Exabot,Exabot
+0,robot,ExactSEEK,ExactSEEK
+0,robot,Ezooms,Ezooms
+0,robot,FAST Enterprise Crawler,FAST Enterprise Crawler
+0,robot,FAST MetaWeb Crawler,FAST MetaWeb Crawler
+0,robot,FacebookExternalHit,FacebookExternalHit
+0,robot,FairShare,FairShare
+0,robot,Falconsbot,Falconsbot
+0,robot,FauBot,FauBot
+0,robot,FeedCatBot,FeedCatBot
+0,robot,FeedFinder/bloggz.se,FeedFinder/bloggz.se
+0,robot,Fetch-Guess,Fetch-Guess
+0,robot,Findexa Crawler,Findexa Crawler
+0,robot,Flatland Industries Web Spider,Flatland Industries Web Spider
+0,robot,FlightDeckReportsBot,FlightDeckReportsBot
+0,robot,FlipboardProxy,FlipboardProxy
+0,robot,Flocke bot,Flocke bot
+0,robot,FollowSite Bot,FollowSite Bot
+0,robot,Fooooo_Web_Video_Crawl,Fooooo_Web_Video_Crawl
+0,robot,Forschungsportal,Forschungsportal
+0,robot,Francis,Francis
+0,robot,FunnelBack,FunnelBack
+0,robot,FurlBot,FurlBot
+0,robot,FyberSpider,FyberSpider
+0,robot,GOFORITBOT,GOFORITBOT
+0,robot,Gaisbot,Gaisbot
+0,robot,Gallent Search Spider,Gallent Search Spider
+0,robot,GarlikCrawler,GarlikCrawler
+0,robot,GeliyooBot,GeliyooBot
+0,robot,Genieo Web filter,Genieo Web filter
+0,robot,GeonaBot,GeonaBot
+0,robot,Giant/1.0,Giant/1.0
+0,robot,Gigabot,Gigabot
+0,robot,GingerCrawler,GingerCrawler
+0,robot,Girafabot,Girafabot
+0,robot,Googlebot,Googlebot
+0,robot,Grahambot,Grahambot
+0,robot,GrapeshotCrawler,GrapeshotCrawler
+0,robot,GurujiBot,GurujiBot
+0,robot,Hailoobot,Hailoobot
+0,robot,HatenaScreenshot,HatenaScreenshot
+0,robot,HeartRails_Capture,HeartRails_Capture
+0,robot,HiddenMarket,HiddenMarket
+0,robot,Holmes,Holmes
+0,robot,HolmesBot,HolmesBot
+0,robot,HomeTags,HomeTags
+0,robot,HooWWWer,HooWWWer
+0,robot,HostTracker,HostTracker
+0,robot,HostTracker.com,HostTracker.com
+0,robot,HuaweiSymantecSpider,HuaweiSymantecSpider
+0,robot,HubSpot Connect,HubSpot Connect
+0,robot,ICC-Crawler,ICC-Crawler
+0,robot,ICF_Site_Crawler,ICF_Site_Crawler
+0,robot,IRLbot,IRLbot
+0,robot,IXEbot,IXEbot
+0,robot,IlTrovatore,IlTrovatore
+0,robot,IlTrovatore-Setaccio,IlTrovatore-Setaccio
+0,robot,IlseBot,IlseBot
+0,robot,Influencebot,Influencebot
+0,robot,InfociousBot,InfociousBot
+0,robot,Infohelfer,Infohelfer
+0,robot,IntegromeDB,IntegromeDB
+0,robot,InternetSeer,InternetSeer
+0,robot,Ipselonbot,Ipselonbot
+0,robot,IstellaBot,IstellaBot
+0,robot,JUST-CRAWLER,JUST-CRAWLER
+0,robot,JadynAve,JadynAve
+0,robot,JadynAveBot,JadynAveBot
+0,robot,Jambot,Jambot
+0,robot,JikeSpider,JikeSpider
+0,robot,Job Roboter Spider,Job Roboter Spider
+0,robot,Jyxobot,Jyxobot
+0,robot,KRetrieve,KRetrieve
+0,robot,Kakle Bot,Kakle Bot
+0,robot,Kalooga,Kalooga
+0,robot,Karneval-Bot,Karneval-Bot
+0,robot,KeywenBot,KeywenBot
+0,robot,KeywordDensityRobot,KeywordDensityRobot
+0,robot,Kongulo,Kongulo
+0,robot,KrOWLer,KrOWLer
+0,robot,Krugle,Krugle
+0,robot,L.webis,L.webis
+0,robot,LapozzBot,LapozzBot
+0,robot,Larbin,Larbin
+0,robot,LemurWebCrawler,LemurWebCrawler
+0,robot,LexxeBot,LexxeBot
+0,robot,Lijit,Lijit
+0,robot,LinguaBot,LinguaBot
+0,robot,Linguee Bot,Linguee Bot
+0,robot,Link Valet Online,Link Valet Online
+0,robot,LinkAider,LinkAider
+0,robot,LinkWalker,LinkWalker
+0,robot,LuminateBot,LuminateBot
+0,robot,MIA Bot,MIA Bot
+0,robot,MJ12bot,MJ12bot
+0,robot,MLBot,MLBot
+0,robot,MQbot,MQbot
+0,robot,MSNBot,MSNBot
+0,robot,MSRBOT,MSRBOT
+0,robot,Mahiti Crawler,Mahiti Crawler
+0,robot,Mail.Ru bot,Mail.Ru bot
+0,robot,MeMoNewsBot,MeMoNewsBot
+0,robot,Megatext,Megatext
+0,robot,MetaGeneratorCrawler,MetaGeneratorCrawler
+0,robot,MetaHeadersBot,MetaHeadersBot
+0,robot,MetaJobBot,MetaJobBot
+0,robot,MetaTagRobot,MetaTagRobot
+0,robot,MetaURI API,MetaURI API
+0,robot,MetaURI,MetaURI
+0,robot,MetamojiCrawler,MetamojiCrawler
+0,robot,Metaspinner/0.01,Metaspinner/0.01
+0,robot,MiaDev,MiaDev
+0,robot,MnoGoSearch,MnoGoSearch
+0,robot,Moatbot,Moatbot
+0,robot,MojeekBot,MojeekBot
+0,robot,Motoricerca-Robots.txt-Checker,Motoricerca-Robots.txt-Checker
+0,robot,Mp3Bot,Mp3Bot
+0,robot,MultiCrawler,MultiCrawler
+0,robot,MyFamilyBot,MyFamilyBot
+0,robot,NG,NG
+0,robot,NG-Search,NG-Search
+0,robot,NLNZ_IAHarvester2013,NLNZ_IAHarvester2013
+0,robot,NPBot,NPBot
+0,robot,Najdi.si,Najdi.si
+0,robot,NaverBot,NaverBot
+0,robot,NerdByNature.Bot,NerdByNature.Bot
+0,robot,NetResearchServer,NetResearchServer
+0,robot,NetWhatCrawler,NetWhatCrawler
+0,robot,NetcraftSurveyAgent,NetcraftSurveyAgent
+0,robot,Netintelligence LiveAssessment,Netintelligence LiveAssessment
+0,robot,Netseer,Netseer
+0,robot,NextGenSearchBot,NextGenSearchBot
+0,robot,Nigma.ru,Nigma.ru
+0,robot,NimbleCrawler,NimbleCrawler
+0,robot,NuSearch Spider,NuSearch Spider
+0,robot,Nuhk,Nuhk
+0,robot,Nutch,Nutch
+0,robot,Nymesis,Nymesis
+0,robot,Ocelli,Ocelli
+0,robot,OmniExplorer_Bot,OmniExplorer_Bot
+0,robot,OnetSzukaj,OnetSzukaj
+0,robot,OpenCalaisSemanticProxy,OpenCalaisSemanticProxy
+0,robot,OpenWebSpider,OpenWebSpider
+0,robot,Openbot,Openbot
+0,robot,OpenindexSpider,OpenindexSpider
+0,robot,Orbiter,Orbiter
+0,robot,OrgbyBot,OrgbyBot
+0,robot,OsObot,OsObot
+0,robot,Page2RSS,Page2RSS
+0,robot,PageBitesHyperBot,PageBitesHyperBot
+0,robot,PagePeeker,PagePeeker
+0,robot,Panscient web crawler,Panscient web crawler
+0,robot,PaperLiBot,PaperLiBot
+0,robot,ParchBot,ParchBot
+0,robot,Peeplo Screenshot Bot,Peeplo Screenshot Bot
+0,robot,Peepowbot,Peepowbot
+0,robot,Peew,Peew
+0,robot,PiplBot,PiplBot
+0,robot,Pixray-Seeker,Pixray-Seeker
+0,robot,Plukkie,Plukkie
+0,robot,Pogodak.co.yu,Pogodak.co.yu
+0,robot,Pompos,Pompos
+0,robot,PostPost,PostPost
+0,robot,ProCogBot,ProCogBot
+0,robot,ProCogSEOBot,ProCogSEOBot
+0,robot,Qirina Hurdler,Qirina Hurdler
+0,robot,Qseero,Qseero
+0,robot,Qualidator.com Bot,Qualidator.com Bot
+0,robot,Qualidator.com SiteAnalyzer 1.0,Qualidator.com SiteAnalyzer 1.0
+0,robot,Quantcastbot,Quantcastbot
+0,robot,QuerySeekerSpider,QuerySeekerSpider
+0,robot,R6 bot,R6 bot
+0,robot,RADaR-Bot,RADaR-Bot
+0,robot,RSSMicro.com RSS/Atom Feed Robot,RSSMicro.com RSS/Atom Feed Robot
+0,robot,RankurBot,RankurBot
+0,robot,RedBot,RedBot
+0,robot,Robo Crawler,Robo Crawler
+0,robot,Robots_Tester,Robots_Tester
+0,robot,Robozilla,Robozilla
+0,robot,Ronzoobot,Ronzoobot
+0,robot,Ruky-Roboter,Ruky-Roboter
+0,robot,RyzeCrawler,RyzeCrawler
+0,robot,SAI Crawler,SAI Crawler
+0,robot,SBIder,SBIder
+0,robot,SBSearch,SBSearch
+0,robot,SEODat,SEODat
+0,robot,SEOENGBot,SEOENGBot
+0,robot,SEOkicks-Robot,SEOkicks-Robot
+0,robot,SSLBot,SSLBot
+0,robot,SWEBot,SWEBot
+0,robot,SanszBot,SanszBot
+0,robot,Scarlett,Scarlett
+0,robot,ScollSpider,ScollSpider
+0,robot,Scooter,Scooter
+0,robot,ScoutJet,ScoutJet
+0,robot,ScreenerBot Crawler,ScreenerBot Crawler
+0,robot,Search Engine World Robots.txt Validator,Search Engine World Robots.txt Validator
+0,robot,Search17Bot,Search17Bot
+0,robot,SearchmetricsBot,SearchmetricsBot
+0,robot,Semager,Semager
+0,robot,Semantifire,Semantifire
+0,robot,SemrushBot,SemrushBot
+0,robot,Sensis Web Crawler,Sensis Web Crawler
+0,robot,SeoCheckBot,SeoCheckBot
+0,robot,Setoozbot ,Setoozbot 
+0,robot,Setoozbot,Setoozbot
+0,robot,SeznamBot,SeznamBot
+0,robot,Shelob,Shelob
+0,robot,Shim-Crawler,Shim-Crawler
+0,robot,ShopWiki,ShopWiki
+0,robot,ShowyouBot,ShowyouBot
+0,robot,Sirketce/Busiverse,Sirketce/Busiverse
+0,robot,Sitedomain-Bot,Sitedomain-Bot
+0,robot,SkreemRBot,SkreemRBot
+0,robot,SnapBot,SnapBot
+0,robot,Snapbot,Snapbot
+0,robot,Snappy,Snappy
+0,robot,SniffRSS,SniffRSS
+0,robot,SolomonoBot,SolomonoBot
+0,robot,Sosospider,Sosospider
+0,robot,Speedy,Speedy
+0,robot,SpiderLing,SpiderLing
+0,robot,Spinn3r,Spinn3r
+0,robot,Spock Crawler,Spock Crawler
+0,robot,SpokeSpider,SpokeSpider
+0,robot,Sproose,Sproose
+0,robot,SrevBot,SrevBot
+0,robot,StackRambler,StackRambler
+0,robot,StatoolsBot,StatoolsBot
+0,robot,Steeler,Steeler
+0,robot,Strokebot,Strokebot
+0,robot,Surphace Scout,Surphace Scout
+0,robot,SurveyBot,SurveyBot
+0,robot,SygolBot,SygolBot
+0,robot,SynooBot,SynooBot
+0,robot,Szukacz,Szukacz
+0,robot,Szukankobot,Szukankobot
+0,robot,Tagoobot,Tagoobot
+0,robot,Technoratibot,Technoratibot
+0,robot,TeragramCrawler,TeragramCrawler
+0,robot,Theophrastus,Theophrastus
+0,robot,ThumbShots-Bot,ThumbShots-Bot
+0,robot,Thumbnail.CZ robot,Thumbnail.CZ robot
+0,robot,Thumbshots.ru,Thumbshots.ru
+0,robot,TinEye,TinEye
+0,robot,Topicbot,Topicbot
+0,robot,Toread-Crawler,Toread-Crawler
+0,robot,Touche,Touche
+0,robot,TurnitinBot,TurnitinBot
+0,robot,TutorGigBot,TutorGigBot
+0,robot,TwengaBot,TwengaBot
+0,robot,Twiceler,Twiceler
+0,robot,Twikle,Twikle
+0,robot,UASlinkChecker,UASlinkChecker
+0,robot,URLAppendBot,URLAppendBot
+0,robot,UnisterBot,UnisterBot
+0,robot,UnwindFetchor,UnwindFetchor
+0,robot,Updownerbot,Updownerbot
+0,robot,UptimeDog,UptimeDog
+0,robot,UptimeRobot,UptimeRobot
+0,robot,Urlfilebot (Urlbot),Urlfilebot (Urlbot)
+0,robot,VERASYS 2k,VERASYS 2k
+0,robot,VMBot,VMBot
+0,robot,VORTEX,VORTEX
+0,robot,VWBot,VWBot
+0,robot,Vagabondo,Vagabondo
+0,robot,Vedma,Vedma
+0,robot,Vermut,Vermut
+0,robot,Vespa Crawler,Vespa Crawler
+0,robot,VideoSurf_bot,VideoSurf_bot
+0,robot,Visbot,Visbot
+0,robot,VoilaBot,VoilaBot
+0,robot,WASALive-Bot,WASALive-Bot
+0,robot,WBSearchBot,WBSearchBot
+0,robot,WIRE,WIRE
+0,robot,WMCAI_robot,WMCAI_robot
+0,robot,WatchMouse,WatchMouse
+0,robot,WeSEE:Search,WeSEE:Search
+0,robot,Web-sniffer,Web-sniffer
+0,robot,WebAlta Crawler,WebAlta Crawler
+0,robot,WebImages,WebImages
+0,robot,WebNL,WebNL
+0,robot,WebRankSpider,WebRankSpider
+0,robot,WebThumbnail,WebThumbnail
+0,robot,WebWatch/Robot_txtChecker,WebWatch/Robot_txtChecker
+0,robot,WebarooBot,WebarooBot
+0,robot,Webscope Crawler,Webscope Crawler
+0,robot,Whoismindbot,Whoismindbot
+0,robot,WikioFeedBot,WikioFeedBot
+0,robot,Willow Internet Crawler,Willow Internet Crawler
+0,robot,WillyBot,WillyBot
+0,robot,WinWebBot,WinWebBot
+0,robot,WinkBot,WinkBot
+0,robot,Woko,Woko
+0,robot,Wotbox,Wotbox
+0,robot,XML Sitemaps Generator,XML Sitemaps Generator
+0,robot,XmarksFetch,XmarksFetch
+0,robot,YRSpider,YRSpider
+0,robot,Yaanb,Yaanb
+0,robot,Yahoo!,Yahoo!
+0,robot,YandexBot,YandexBot
+0,robot,Yanga,Yanga
+0,robot,YioopBot,YioopBot
+0,robot,YodaoBot,YodaoBot
+0,robot,Yoono Bot,Yoono Bot
+0,robot,YoudaoBot,YoudaoBot
+0,robot,YowedoBot,YowedoBot
+0,robot,ZACATEK_CZ,ZACATEK_CZ
+0,robot,Zeusbot,Zeusbot
+0,robot,ZookaBot,ZookaBot
+0,robot,Zookabot,Zookabot
+0,robot,ZoomSpider (ZSEBOT),ZoomSpider (ZSEBOT)
+0,robot,ZumBot,ZumBot
+0,robot,ZyBorg,ZyBorg
+0,robot,^Nail,^Nail
+0,robot,abby,abby
+0,robot,adressendeutschland.de,adressendeutschland.de
+0,robot,aiHitBot,aiHitBot
+0,robot,aippie,aippie
+0,robot,akula,akula
+0,robot,alexa site audit,alexa site audit
+0,robot,amibot,amibot
+0,robot,arachnode.net,arachnode.net
+0,robot,archive.org_bot,archive.org_bot
+0,robot,baypup,baypup
+0,robot,bingbot,bingbot
+0,robot,bitlybot,bitlybot
+0,robot,biwec,biwec
+0,robot,bixocrawler,bixocrawler
+0,robot,bl.uk_lddc_bot,bl.uk_lddc_bot
+0,robot,bnf.fr_bot,bnf.fr_bot
+0,robot,boitho.com-dc,boitho.com-dc
+0,robot,bot-pge.chlooe.com,bot-pge.chlooe.com
+0,robot,bot.wsowner.com,bot.wsowner.com
+0,robot,botmobi,botmobi
+0,robot,btbot,btbot
+0,robot,ccubee,ccubee
+0,robot,cityreview,cityreview
+0,robot,coccoc,coccoc
+0,robot,copyright sheriff,copyright sheriff
+0,robot,csci_b659,csci_b659
+0,robot,del.icio.us-thumbnails,del.icio.us-thumbnails
+0,robot,discoverybot,discoverybot
+0,robot,dotSemantic,dotSemantic
+0,robot,drupact,drupact
+0,robot,e-SocietyRobot,e-SocietyRobot
+0,robot,eCairn-Grabber,eCairn-Grabber
+0,robot,egothor,egothor
+0,robot,ejupiter.com,ejupiter.com
+0,robot,emefgebot,emefgebot
+0,robot,envolk,envolk
+0,robot,facebookplatform,facebookplatform
+0,robot,factbot,factbot
+0,robot,fastbot crawler,fastbot crawler
+0,robot,favorstarbot,favorstarbot
+0,robot,findlinks,findlinks
+0,robot,firmilybot,firmilybot
+0,robot,flatlandbot,flatlandbot
+0,robot,g2crawler,g2crawler
+0,robot,genieBot,genieBot
+0,robot,gonzo,gonzo
+0,robot,heritrix,heritrix
+0,robot,ht://Dig,ht://Dig
+0,robot,iCjobs,iCjobs
+0,robot,ia_archiver,ia_archiver
+0,robot,iaskspider,iaskspider
+0,robot,ichiro,ichiro
+0,robot,imbot,imbot
+0,robot,immediatenet thumbnails,immediatenet thumbnails
+0,robot,ksibot,ksibot
+0,robot,linkdex.com,linkdex.com
+0,robot,linkdexbot,linkdexbot
+0,robot,linksmanager_bot,linksmanager_bot
+0,robot,livedoor ScreenShot,livedoor ScreenShot
+0,robot,lmspider,lmspider
+0,robot,magpie-crawler,magpie-crawler
+0,robot,meanpathbot,meanpathbot
+0,robot,miniRank,miniRank
+0,robot,moba-crawler,moba-crawler
+0,robot,mozDex,mozDex
+0,robot,navissobot,navissobot
+0,robot,nestReader,nestReader
+0,robot,netEstate Crawler,netEstate Crawler
+0,robot,nextthing.org,nextthing.org
+0,robot,nodestackbot,nodestackbot
+0,robot,noyona,noyona
+0,robot,nworm,nworm
+0,robot,oBot,oBot
+0,robot,ownCloud Server Crawler,ownCloud Server Crawler
+0,robot,owsBot,owsBot
+0,robot,page_verifier,page_verifier
+0,robot,parsijoo,parsijoo
+0,robot,peerindex,peerindex
+0,robot,percbotspider,percbotspider
+0,robot,pingdom.com_bot,pingdom.com_bot
+0,robot,pmoz.info ODP link checker,pmoz.info ODP link checker
+0,robot,polixea.de,polixea.de
+0,robot,posterus,posterus
+0,robot,proximic,proximic
+0,robot,psbot,psbot
+0,robot,quickobot,quickobot
+0,robot,rogerbot,rogerbot
+0,robot,schibstedsokbot,schibstedsokbot
+0,robot,search.KumKie.com,search.KumKie.com
+0,robot,silk,silk
+0,robot,sistrix,sistrix
+0,robot,smart.apnoti.com Robot,smart.apnoti.com Robot
+0,robot,snap.com,snap.com
+0,robot,socialbm_bot,socialbm_bot
+0,robot,sogou spider,sogou spider
+0,robot,spbot,spbot
+0,robot,sproose,sproose
+0,robot,suggybot,suggybot
+0,robot,taptubot,taptubot
+0,robot,textractor,textractor
+0,robot,thumbshots-de-Bot,thumbshots-de-Bot
+0,robot,trendictionbot ,trendictionbot 
+0,robot,trendictionbot,trendictionbot
+0,robot,uMBot,uMBot
+0,robot,updated,updated
+0,robot,urlfan-bot,urlfan-bot
+0,robot,virus_detector,virus_detector
+0,robot,void-bot,void-bot
+0,robot,voyager,voyager
+0,robot,webinatorbot,webinatorbot
+0,robot,webmastercoffee,webmastercoffee
+0,robot,wectar,wectar
+0,robot,wikiwix-bot,wikiwix-bot
+0,robot,woriobot,woriobot
+0,robot,wsAnalyzer,wsAnalyzer
+0,robot,wscheck.com,wscheck.com
+0,robot,www.fi crawler,www.fi crawler
+0,robot,wwwster,wwwster
+0,robot,yacybot,yacybot
