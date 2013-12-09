@@ -13,8 +13,8 @@ func TestScanBrowser(t *testing.T) {
 	for i, browser := range fixtures.Browsers() {
 		lineNum := fmt.Sprintf("Line #%d", i+1)
 		ua, _ := s.Scan(browser.UserAgentString)
-		isname := assert.Equal(t, ua.Browser.Name, browser.Name, lineNum)
-		istype := assert.Equal(t, ua.Browser.Type, browser.Type, lineNum)
+		isname := assert.Equal(t, browser.Name, ua.Browser.Name, lineNum)
+		istype := assert.Equal(t, browser.Type, ua.Browser.Type, lineNum)
 		if !isname || !istype {
 			break
 		}

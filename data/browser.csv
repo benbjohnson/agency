@@ -130,24 +130,26 @@
 0,Browser,OWB,Origyn
 0,Browser,Off By One,OffByOne
 0,Browser,OmniWeb,OmniWeb
-0,Browser,Opera,Opera
+1,Browser,Opera,Opera
 0,Browser,Opera,OPR
 0,Browser,Orca,Orca
 0,Browser,Oregano,Oregano
-0,Browser,PS4 Web browser,PS4 Web browser
+0,Browser,PS4 Web browser,PlayStation 4
 0,Browser,Pale Moon,Palemoon
 0,Browser,Patriott,Patriott
 0,Browser,Phaseout,Phaseout
-0,Browser,Phoenix (old name for Firefox),Phoenix (old name for Firefox)
+0,Browser,Phaseout,PhaseOut-www.phaseout.net
+0,Browser,Phoenix,Phoenix
 0,Browser,Polarity,Polarity
 0,Browser,QtWeb,QtWeb
 0,Browser,QupZilla,QupZilla
-0,Browser,Rekonq,Rekonq
-0,Browser,Roccat browser,Roccat browser
+0,Browser,Rekonq,rekonq
+0,Browser,Roccat browser,Roccat
 0,Browser,RockMelt,RockMelt
 0,Browser,Ryouko,Ryouko
-0,Browser,SaaYaa Explorer,SaaYaa Explorer
-2,Browser,Safari,Safari
+0,Browser,SaaYaa Explorer,SaaYaa
+3,Browser,Safari,Safari
+3,Browser,Safari,AppleWebKit
 0,Browser,SeaMonkey,SeaMonkey
 0,Browser,Shiira,Shiira
 0,Browser,SiteKiosk,SiteKiosk
@@ -155,31 +157,33 @@
 0,Browser,Sleipnir,Sleipnir
 0,Browser,SlimBoat,SlimBoat
 0,Browser,SlimBrowser,SlimBrowser
-0,Browser,Sogou Explorer,Sogou Explorer
+0,Browser,Sogou Explorer,MetaSr
 0,Browser,Stainless,Stainless
 0,Browser,Sundance,Sundance
 0,Browser,Sundial,Sundial
 0,Browser,Sunrise,Sunrise
+0,Browser,Sunrise,SunriseBrowser
 0,Browser,Superbird,Superbird
+0,Browser,Superbird,SuperBird
 0,Browser,Surf,Surf
 0,Browser,Swiftfox,Swiftfox
 0,Browser,Swiftweasel,Swiftweasel
-0,Browser,TT Explorer,TT Explorer
+0,Browser,TT Explorer,TencentTraveler
 0,Browser,TenFourFox,TenFourFox
-0,Browser,TheWorld Browser,TheWorld Browser
+0,Browser,TheWorld Browser,TheWorld
 0,Browser,Tjusig,Tjusig
-0,Browser,UltraBrowser ,UltraBrowser 
+0,Browser,UltraBrowser,UltraBrowser
 0,Browser,Usejump,Usejump
 0,Browser,Uzbl,Uzbl
 0,Browser,Vonkeror,Vonkeror
 0,Browser,WebRender,WebRender
-0,Browser,Webian Shell,Webian Shell
-0,Browser,Weltweitimnetz Browser,Weltweitimnetz Browser
-0,Browser,WorldWideWeb,WorldWideWeb
+0,Browser,Webian Shell,WebianShell
+0,Browser,Weltweitimnetz Browser,WeltweitimnetzBrowser
+0,Browser,WorldWideWeb,WorldWideweb
 0,Browser,Wyzo,Wyzo
 0,Browser,X-Smiles,X-Smiles
-0,Browser,YRC Weblink,YRC Weblink
-0,Browser,Yandex.Browser,Yandex.Browser
+0,Browser,YRC Weblink,YRCWeblink
+0,Browser,Yandex.Browser,YaBrowser
 0,Browser,ZipZap,ZipZap
 0,Browser,iCab,iCab
 0,Browser,iRider,iRider
@@ -245,7 +249,7 @@
 0,Library,Anemone,Anemone
 0,Library,Apache-HttpClient,Apache-HttpClient
 0,Library,BinGet,BinGet
-0,Library,CFNetwork,CFNetwork
+1,Library,CFNetwork,CFNetwork
 0,Library,Chilkat HTTP .NET,Chilkat HTTP .NET
 0,Library,EventMachine,EventMachine
 0,Library,Evolution/Camel.Stream,Evolution/Camel.Stream
@@ -286,34 +290,66 @@
 0,Library,libwww-perl,libwww-perl
 0,Library,urlgrabber,urlgrabber
 0,Library,xine,xine
-0,Mobile Browser,Android browser,Android browser
-0,Mobile Browser,Atomic Web Browser,Atomic Web Browser
-0,Mobile Browser,BlackBerry Browser,BlackBerry Browser
+1,Mobile Browser,Android browser,Android
+0,Mobile Browser,Atomic Web Browser,AtomicBrowser
+0,Mobile Browser,BlackBerry Browser,BlackBerry8100
+0,Mobile Browser,BlackBerry Browser,BlackBerry8820
+0,Mobile Browser,BlackBerry Browser,BlackBerry9000
+0,Mobile Browser,BlackBerry Browser,BlackBerry9530
+0,Mobile Browser,BlackBerry Browser,BlackBerry8330m
+0,Mobile Browser,BlackBerry Browser,BlackBerry8703e
+0,Mobile Browser,BlackBerry Browser,RIM Tablet
+0,Mobile Browser,BlackBerry Browser,PlayBook
+0,Mobile Browser,BlackBerry Browser,BB10
 0,Mobile Browser,Blazer,Blazer
-0,Mobile Browser,Chrome Mobile,Chrome Mobile
+2,Mobile Browser,Chrome Mobile,CrMo
+0,Mobile Browser,Chrome Mobile,SGH-I777
+0,Mobile Browser,Chrome Mobile,Galaxy Nexus
+0,Mobile Browser,Chrome Mobile,CriOS
 0,Mobile Browser,Dolphin,Dolphin
+0,Mobile Browser,Dolphin,Dolfin
 0,Mobile Browser,Doris,Doris
-0,Mobile Browser,GO Browser,GO Browser
+0,Mobile Browser,GO Browser,GoBrowser
 0,Mobile Browser,IE Mobile,IE Mobile
+0,Mobile Browser,IE Mobile,IEMobile
+0,Mobile Browser,IE Mobile,ZuneWP7
 0,Mobile Browser,Jasmine,Jasmine
-0,Mobile Browser,Kindle Browser,Kindle Browser
+0,Mobile Browser,Kindle Browser,Kindle
 0,Mobile Browser,Maxthon mobile,Maxthon mobile
 0,Mobile Browser,MicroB,MicroB
+0,Mobile Browser,MicroB,RX-34
+0,Mobile Browser,MicroB,RX-51
 0,Mobile Browser,Minimo,Minimo
-0,Mobile Browser,Mobile Firefox,Mobile Firefox
-0,Mobile Browser,Mobile Safari,Mobile Safari
-0,Mobile Browser,Motorola Internet Browser,Motorola Internet Browser
-0,Mobile Browser,NetFront Life,NetFront Life
-0,Mobile Browser,NetFront,NetFront
+0,Mobile Browser,Mobile Firefox,Fennec
+3,Mobile Browser,Mobile Safari,Mobile Safari
+0,Mobile Browser,Motorola Internet Browser,MOT-V3r
+0,Mobile Browser,Motorola Internet Browser,MOT-L6
+0,Mobile Browser,Motorola Internet Browser,MOT-V3i
+0,Mobile Browser,NetFront Life,NetFrontLifeBrowser
+1,Mobile Browser,NetFront,NetFront
+0,Mobile Browser,NetFront,PSP
+0,Mobile Browser,NetFront,Amoi
+0,Mobile Browser,NetFront,Danger hiptop
+0,Mobile Browser,NetFront,PLAYSTATION 3
 0,Mobile Browser,NineSky,NineSky
-0,Mobile Browser,Nokia Web Browser,Nokia Web Browser
-0,Mobile Browser,ONE Browser,ONE Browser
+0,Mobile Browser,NineSky,Ninesky-android-mobile
+0,Mobile Browser,Nokia Web Browser,SymbianOS
+0,Mobile Browser,Nokia Web Browser,NokiaBrowser
+0,Mobile Browser,Nokia Web Browser,NokiaN93-1
+0,Mobile Browser,ONE Browser,OneBrowser
 0,Mobile Browser,Obigo,Obigo
-0,Mobile Browser,Openwave Mobile Browser,Openwave Mobile Browser
+0,Mobile Browser,Obigo,Samsung-SPHA920
+0,Mobile Browser,Obigo,Samsung-SPHA900
+0,Mobile Browser,Obigo,Teleca
+0,Mobile Browser,Obigo,Teleca-Q7.1
+0,Mobile Browser,Obigo,ObigoInternetBrowser
+0,Mobile Browser,Openwave Mobile Browser,UP.Browser
 0,Mobile Browser,Opera Mini,Opera Mini
 0,Mobile Browser,Opera Mobile,Opera Mobile
+0,Mobile Browser,Opera Mobile,Opera Mobi
+0,Mobile Browser,Opera Mobile,Opera Tablet
 0,Mobile Browser,PS Vita browser,PS Vita browser
-0,Mobile Browser,Palm Pre web browser,Palm Pre web browser
+0,Mobile Browser,Palm Pre web browser,webOS
 0,Mobile Browser,Palm WebPro,Palm WebPro
 0,Mobile Browser,Polaris,Polaris
 0,Mobile Browser,Puffin,Puffin
@@ -358,6 +394,7 @@
 0,Offline Browser,HTTrack,HTTrack
 0,Offline Browser,JoBo,JoBo
 0,Offline Browser,Offline Explorer,Offline Explorer
+0,Offline Browser,Offline Explorer,Web Downloader
 0,Offline Browser,SiteSucker,SiteSucker
 0,Offline Browser,SuperBot,SuperBot
 0,Offline Browser,Teleport Pro,Teleport Pro
@@ -366,6 +403,7 @@
 0,Offline Browser,WebZIP,WebZIP
 0,Offline Browser,Wget,Wget
 0,Offline Browser,Xaldon WebSpider,Xaldon WebSpider
+0,Offline Browser,Xaldon WebSpider,Xaldon_WebSpider
 0,Offline Browser,iSiloX,iSiloX
 0,Offline Browser,iSiloXC,iSiloXC
 0,Offline Browser,webfetch,webfetch

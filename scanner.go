@@ -20,6 +20,7 @@ type Scanner struct {
 	idx    int
 	size   int
 	prevstart int
+	mobile bool
 	browsers []*data.Browser
 }
 
@@ -46,6 +47,10 @@ func (s *Scanner) ScanBytes(b []byte) (*UserAgent, error) {
 			return nil, err
 		}
 
+		// Set the mobile flag.
+		if !s.mobile {
+			s.matchMobile(unigram)
+		}
 		if ua.Browser.Type == "" {
 			s.matchBrowser(unigram, bigram)
 		}
@@ -57,6 +62,20 @@ func (s *Scanner) ScanBytes(b []byte) (*UserAgent, error) {
 			ua.Browser.Type = browser.Type
 			ua.Browser.Name = browser.Name
 			break
+		}
+	}
+
+	// Special mobile cases.
+	if s.mobile {
+		if ua.Browser.Name == "Firefox" {
+			ua.Browser.Type = "Mobile Browser"
+			ua.Browser.Name = "Mobile Firefox"
+		} else if ua.Browser.Name == "Safari" {
+			ua.Browser.Type = "Mobile Browser"
+			ua.Browser.Name = "Mobile Safari"
+		} else if ua.Browser.Name == "Opera" {
+			ua.Browser.Type = "Mobile Browser"
+			ua.Browser.Name = "Opera Mobile"
 		}
 	}
 
@@ -124,6 +143,15 @@ func (s *Scanner) readNgrams() ([]byte, []byte, error) {
 	return unigram, bigram, nil
 }
 
+// match checks a unigram against the list of mobile tokens.
+func (s *Scanner) matchMobile(unigram []byte) {
+	for _, browser := range data.Mobiles {
+		if bytes.Equal(unigram, browser.Token) {
+			s.mobile = true
+		}
+	}
+}
+
 // match checks a unigram and bigram against the list of browser tokens.
 func (s *Scanner) matchBrowser(unigram []byte, bigram []byte) {
 	for _, browser := range data.Browsers {
@@ -138,6 +166,7 @@ func (s *Scanner) reset() {
 	s.idx = 0
 	s.size = 0
 	s.prevstart = 0
+	s.mobile = false
 
 	for i, _ := range s.browsers {
 		s.browsers[i] = nil
