@@ -76,6 +76,9 @@ func (s *Scanner) ScanBytes(b []byte) (*UserAgent, error) {
 		} else if ua.Browser.Name == "Opera" {
 			ua.Browser.Type = "Mobile Browser"
 			ua.Browser.Name = "Opera Mobile"
+		} else if ua.Browser.Name == "Yandex.Browser" {
+			ua.Browser.Type = "Mobile Browser"
+			ua.Browser.Name = "Yandex.Browser mobile"
 		}
 	}
 

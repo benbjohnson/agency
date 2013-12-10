@@ -192,23 +192,26 @@
 0,Browser,w3m,w3m
 0,Browser,wKiosk,wKiosk
 0,Browser,zBrowser,zBrowser
-0,Email client,AirMail,AirMail
-0,Email client,Apple Mail,Apple Mail
+0,Email client,AirMail,Airmail
 0,Email client,Barca,Barca
+0,Email client,Barca,BarcaPro
 0,Email client,Eudora,Eudora
 0,Email client,GcMail,GcMail
-0,Email client,Lotus Notes,Lotus Notes
-0,Email client,Outlook 2007,Outlook 2007
-0,Email client,Outlook 2010,Outlook 2010
-0,Email client,Outlook 2013,Outlook 2013
+0,Email client,Lotus Notes,Lotus-Notes
+0,Email client,Outlook 2007,MSOffice 12
+0,Email client,Outlook 2010,MSOffice 14
+0,Email client,Outlook 2010,Office/14.0
+0,Email client,Outlook 2013,MSOffice 15
+0,Email client,Outlook 2013,Outlook 15.0.4420
 0,Email client,PocoMail,PocoMail
+0,Email client,PocoMail,Pocomail
 0,Email client,Postbox,Postbox
 0,Email client,Shredder,Shredder
 0,Email client,Sparrow,Sparrow
 0,Email client,Spicebird,Spicebird
-0,Email client,The Bat!,The Bat!
+0,Email client,The Bat!,The Bat
 0,Email client,Thunderbird,Thunderbird
-0,Email client,Windows Live Mail,Windows Live Mail
+0,Email client,Windows Live Mail,TmstmpExt
 0,Feed Reader,Abilon,Abilon
 0,Feed Reader,Akregator,Akregator
 0,Feed Reader,Apple-PubSub,Apple-PubSub
@@ -245,48 +248,53 @@
 0,Feed Reader,YahooFeedSeeker,YahooFeedSeeker
 0,Feed Reader,YeahReader,YeahReader
 0,Feed Reader,iCatcher!,iCatcher!
-0,Library,Adobe AIR runtime,Adobe AIR runtime
+0,Library,Adobe AIR runtime,AdobeAIR
 0,Library,Anemone,Anemone
 0,Library,Apache-HttpClient,Apache-HttpClient
 0,Library,BinGet,BinGet
 1,Library,CFNetwork,CFNetwork
-0,Library,Chilkat HTTP .NET,Chilkat HTTP .NET
+0,Library,Chilkat HTTP .NET,Chilkat
 0,Library,EventMachine,EventMachine
-0,Library,Evolution/Camel.Stream,Evolution/Camel.Stream
+0,Library,Evolution/Camel.Stream,CamelHttpStream
 0,Library,Feed::Find,Feed::Find
-0,Library,FeedParser,FeedParser
+0,Library,FeedParser,UniversalFeedParser
 0,Library,GStreamer,GStreamer
-0,Library,Go http package,Go http package
-0,Library,HTMLayout,HTMLayout
+0,Library,Go http package,Go
+0,Library,HTMLayout,htmlayout
 0,Library,HTTP_Request2,HTTP_Request2
-0,Library,IXR lib,IXR lib
+0,Library,IXR lib,Incutio
 0,Library,Indy Library,Indy Library
 0,Library,Jakarta Commons-HttpClient,Jakarta Commons-HttpClient
 4,Library,Java,Java
+4,Library,Java,Java1.3.1_06
 0,Library,LWP::Simple,LWP::Simple
-0,Library,LibSoup,LibSoup
+0,Library,LWP::Simple,lwp-trivial
+1,Library,LibSoup,libsoup
 0,Library,MagpieRSS,MagpieRSS
 0,Library,Mechanize,Mechanize
-0,Library,PEAR HTTP_Request,PEAR HTTP_Request
-0,Library,PHP OpenID library,PHP OpenID library
-0,Library,PHPcrawl,PHPcrawl
-0,Library,POE-Component-Client-HTTP,POE-Component-Client-HTTP
+0,Library,PEAR HTTP_Request,PEAR
+0,Library,PHP OpenID library,php-openid
+0,Library,PHPcrawl,PHPCrawl
+0,Library,POE-Component-Client-HTTP,Poe-Component-Client-HTTP
 0,Library,PycURL,PycURL
-0,Library,Python-requests,Python-requests
+0,Library,Python-requests,python-requests
 0,Library,Python-urllib,Python-urllib
 0,Library,Python-webchecker,Python-webchecker
-0,Library,ROME library,ROME library
+0,Library,ROME library,Rome Client
 0,Library,RestSharp,RestSharp
 0,Library,SimplePie,SimplePie
 0,Library,Snoopy,Snoopy
-0,Library,Summer,Summer
+0,Library,Summer,libsummer
 0,Library,Typhoeus,Typhoeus
-0,Library,WWW::Mechanize,WWW::Mechanize
+0,Library,WWW::Mechanize,WWW-Mechanize
 0,Library,WinHTTP,WinHTTP
-0,Library,XML-RPC for PHP,XML-RPC for PHP
-0,Library,XML-RPC for Ruby,XML-RPC for Ruby
+0,Library,WinHTTP,WinHttp
+0,Library,WinHTTP,WinHttp.WinHttpRequest.5
+0,Library,XML-RPC for PHP,for PHP
+0,Library,XML-RPC for Ruby,XMLRPC::Client
+0,Library,Zend_Http_Client,Zend
 0,Library,Zend_Http_Client,Zend_Http_Client
-0,Library,cURL,cURL
+1,Library,cURL,curl
 0,Library,libwww-perl,libwww-perl
 0,Library,urlgrabber,urlgrabber
 0,Library,xine,xine
@@ -348,23 +356,29 @@
 0,Mobile Browser,Opera Mobile,Opera Mobile
 0,Mobile Browser,Opera Mobile,Opera Mobi
 0,Mobile Browser,Opera Mobile,Opera Tablet
-0,Mobile Browser,PS Vita browser,PS Vita browser
+0,Mobile Browser,PS Vita browser,Playstation Vita
+0,Mobile Browser,PS Vita browser,PlayStation Vita
 0,Mobile Browser,Palm Pre web browser,webOS
-0,Mobile Browser,Palm WebPro,Palm WebPro
+0,Mobile Browser,Palm WebPro,WebPro
 0,Mobile Browser,Polaris,Polaris
+0,Mobile Browser,Polaris,POLARIS
+0,Mobile Browser,Polaris,Infraware-Polaris
 0,Mobile Browser,Puffin,Puffin
-0,Mobile Browser,QQbrowser,QQbrowser
-0,Mobile Browser,SEMC Browser,SEMC Browser
-0,Mobile Browser,Silk,Silk
+0,Mobile Browser,QQbrowser,MQQBrowser
+0,Mobile Browser,SEMC Browser,SEMC-Browser
+1,Mobile Browser,Silk,Silk
 0,Mobile Browser,Skyfire,Skyfire
 0,Mobile Browser,TeaShark,TeaShark
-0,Mobile Browser,Tear,Tear
-0,Mobile Browser,Tizen Browser,Tizen Browser
-0,Mobile Browser,UC Browser,UC Browser
-0,Mobile Browser,Ubuntu web browser,Ubuntu web browser
-0,Mobile Browser,Yandex.Browser mobile,Yandex.Browser mobile
-0,Mobile Browser,uZard Web,uZard Web
+0,Mobile Browser,Tear,tear
+0,Mobile Browser,Tizen Browser,Tizen
+0,Mobile Browser,UC Browser,UCWEB
+0,Mobile Browser,UC Browser,UCBrowser
+0,Mobile Browser,UC Browser,UCWEB7.0.0.33
+0,Mobile Browser,Ubuntu web browser,Ubuntu; Mobile
+0,Mobile Browser,Ubuntu web browser,Ubuntu; Tablet
+0,Mobile Browser,uZard Web,uZardWeb
 0,Mobile Browser,wOSBrowser,wOSBrowser
+0,Mobile Browser,wOSBrowser,webOSBrowser
 0,Multimedia Player,Banshee,Banshee
 0,Multimedia Player,Boxxe,Boxxe
 0,Multimedia Player,CorePlayer,CorePlayer
@@ -445,7 +459,7 @@
 0,Other,NetFront Mobile Content Viewer,NetFront Mobile Content Viewer
 0,Other,Nokia SyncML Client,Nokia SyncML Client
 0,Other,Novell BorderManager,Novell BorderManager
-0,Other,PHP,PHP
+4,Other,PHP,PHP
 0,Other,PRTG Network Monitor,PRTG Network Monitor
 0,Other,Paparazzi!,Paparazzi!
 0,Other,Pattern,Pattern
@@ -497,7 +511,8 @@
 0,Validator,anw LoadControl,anw LoadControl
 0,Wap Browser,Klondike,Klondike
 0,Wap Browser,WapTiger,WapTiger
-0,Wap Browser,WinWap,WinWap
+0,Wap Browser,WinWap,WinWAP
+0,Wap Browser,WinWap,WinWAP-SPBE
 0,robot,192.comAgent,192.comAgent
 0,robot,200PleaseBot,200PleaseBot
 0,robot,360Spider,360Spider

@@ -1,20 +1,23 @@
 package agency
 
 import (
+	"bytes"
+	"encoding/csv"
 	"fmt"
+	"io/ioutil"
 	"testing"
 
-	"github.com/benbjohnson/agency/fixtures"
 	"github.com/stretchr/testify/assert"
 )
 
 func TestScanBrowser(t *testing.T) {
 	s := NewScanner()
-	for i, browser := range fixtures.Browsers() {
-		lineNum := fmt.Sprintf("Line #%d", i+1)
-		ua, _ := s.Scan(browser.UserAgentString)
-		isname := assert.Equal(t, browser.Name, ua.Browser.Name, lineNum)
-		istype := assert.Equal(t, browser.Type, ua.Browser.Type, lineNum)
+	b, _ := ioutil.ReadFile("fixtures/browser.csv")
+	records, _ := csv.NewReader(bytes.NewBuffer(b)).ReadAll()
+	for i, record := range records {
+		ua, _ := s.Scan(record[2])
+		istype := assert.Equal(t, record[0], ua.Browser.Type, fmt.Sprintf("Line #%d", i+1))
+		isname := assert.Equal(t, record[1], ua.Browser.Name, fmt.Sprintf("Line #%d", i+1))
 		if !isname || !istype {
 			break
 		}

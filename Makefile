@@ -1,14 +1,12 @@
 DATASRC=$(wildcard data/*.csv)
 DATABIN=$(patsubst %,%.go,${DATASRC})
-FIXSRC=$(wildcard fixtures/*.csv)
-FIXBIN=$(patsubst %,%.go,${FIXSRC})
 
 default:
 	@echo "usage:"
 	@echo "    make bindata"
 	@echo
 
-bindata: data fixtures
+bindata: data
 
 data: $(DATABIN)
 
@@ -16,13 +14,7 @@ data/%.csv.go: data/%.csv
 	rm -f data/$*.csv.go
 	cat data/$*.csv | go-bindata -func $(subst .,_,$*)_csv -pkg data | gofmt > data/$*.csv.go
 
-fixtures: $(FIXBIN)
-
-fixtures/%.csv.go: fixtures/%.csv
-	rm -f fixtures/$*.csv.go
-	cat fixtures/$*.csv | go-bindata -func $(subst .,_,$*)_csv -pkg fixtures | gofmt > fixtures/$*.csv.go
-
 clean:
-	rm $(DATABIN) $(FIXBIN)
+	rm $(DATABIN)
 
-.PHONY: clean data fixtures
+.PHONY: clean data
