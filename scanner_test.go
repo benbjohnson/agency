@@ -36,6 +36,21 @@ func TestScanDevice(t *testing.T) {
 	}
 }
 
+func TestScanOS(t *testing.T) {
+	s := NewScanner()
+	b, _ := ioutil.ReadFile("fixtures/os.csv")
+	records, _ := csv.NewReader(bytes.NewBuffer(b)).ReadAll()
+	for i, record := range records {
+		ua, _ := s.Scan(record[2])
+		isname := assert.Equal(t, record[0], ua.OS.Name, fmt.Sprintf("Line #%d", i+1))
+		isversion := assert.Equal(t, record[1], ua.OS.Version, fmt.Sprintf("Line #%d", i+1))
+		if !isname || !isversion {
+			break
+		}
+	}
+}
+
+
 
 func BenchmarkScan(b *testing.B) {
 	s := NewScanner()

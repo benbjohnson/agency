@@ -9,4 +9,8 @@ type UserAgent struct {
 	Device struct {
 		Type string
 	}
+	OS struct {
+		Name string
+		Version string
+	}
 }

@@ -23,6 +23,7 @@ type Scanner struct {
 	mobile bool
 	browsers []*data.Browser
 	devices []*data.Device
+	oses []*data.OS
 }
 
 // NewScanner creates a new user agent scanner.
@@ -30,6 +31,7 @@ func NewScanner() *Scanner {
 	return &Scanner{
 		browsers: make([]*data.Browser, data.MaxRank),
 		devices: make([]*data.Device, data.MaxRank),
+		oses: make([]*data.OS, data.MaxRank),
 	}
 }
 
@@ -54,12 +56,9 @@ func (s *Scanner) ScanBytes(b []byte) (*UserAgent, error) {
 			s.matchMobile(unigram)
 		}
 
-		if ua.Browser.Type == "" {
-			s.matchBrowser(unigram, bigram)
-		}
-		if ua.Device.Type == "" {
-			s.matchDevice(unigram, bigram)
-		}
+		s.matchBrowser(unigram, bigram)
+		s.matchDevice(unigram, bigram)
+		s.matchOS(unigram, bigram)
 	}
 
 	// Find browser by rank level.
@@ -75,6 +74,15 @@ func (s *Scanner) ScanBytes(b []byte) (*UserAgent, error) {
 	for _, device := range s.devices {
 		if device != nil {
 			ua.Device.Type = device.Type
+			break
+		}
+	}
+
+	// Find OS by rank level.
+	for _, os := range s.oses {
+		if os != nil {
+			ua.OS.Name = os.Name
+			ua.OS.Version = os.Version
 			break
 		}
 	}
@@ -162,8 +170,8 @@ func (s *Scanner) readNgrams() ([]byte, []byte, error) {
 
 // match checks a unigram against the list of mobile tokens.
 func (s *Scanner) matchMobile(unigram []byte) {
-	for _, browser := range data.Mobiles {
-		if bytes.Equal(unigram, browser.Token) {
+	for _, mobile := range data.Mobiles {
+		if bytes.Equal(unigram, mobile.Token) {
 			s.mobile = true
 		}
 	}
@@ -183,6 +191,15 @@ func (s *Scanner) matchDevice(unigram []byte, bigram []byte) {
 	for _, device := range data.Devices {
 		if bytes.Equal(unigram, device.Token) || bytes.Equal(bigram, device.Token) {
 			s.devices[device.Rank] = device
+		}
+	}
+}
+
+// matchOS checks a unigram and bigram against the list of OS tokens.
+func (s *Scanner) matchOS(unigram []byte, bigram []byte) {
+	for _, os := range data.OSes {
+		if bytes.Equal(unigram, os.Token) || bytes.Equal(bigram, os.Token) {
+			s.oses[os.Rank] = os
 		}
 	}
 }
