@@ -24,6 +24,18 @@ func TestScanBrowser(t *testing.T) {
 	}
 }
 
+func TestScanDevice(t *testing.T) {
+	s := NewScanner()
+	b, _ := ioutil.ReadFile("fixtures/device.csv")
+	records, _ := csv.NewReader(bytes.NewBuffer(b)).ReadAll()
+	for i, record := range records {
+		ua, _ := s.Scan(record[1])
+		if !assert.Equal(t, record[0], ua.Device.Type, fmt.Sprintf("Line #%d", i+1)) {
+			break
+		}
+	}
+}
+
 
 func BenchmarkScan(b *testing.B) {
 	s := NewScanner()

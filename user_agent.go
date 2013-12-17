@@ -6,4 +6,7 @@ type UserAgent struct {
 		Type string
 		Name string
 	}
+	Device struct {
+		Type string
+	}
 }
