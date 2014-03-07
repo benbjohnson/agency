@@ -1,5 +1,6 @@
 # Agency
-> A fast user agent string parser for Go.
+
+Agency is a fast user-agent parser in pure Go. It uses a simple tokenizer and weighted tokens to determine the correct device type, category and browser.
 
 ## Usage
 
@@ -16,12 +17,28 @@ ua := agency.Scan("Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 b
 
 The `Scan()` function returns a `UserAgent` with the following string properties:
 
-* `Type` - `Desktop`, `Tablet`, `Mobile`
+```
+Type
+----------
+Desktop
+Tablet
+Mobile
 
-* `Category` - `Windows`, `Mac`, `Linux`, `iOS`, `Blackberry`, `Android`, etc.
+Category
+----------
+Windows
+Mac
+Linux
+iOS
+Blackberry
+Android
 
-* `Browser` - `Chrome`, `Safari`, `Internet Explorer`, etc.
-
+Browser
+----------
+Chrome
+Safari
+Internet Explorer
+```
 
 
 ## Performance
