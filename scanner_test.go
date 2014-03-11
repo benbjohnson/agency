@@ -37,6 +37,7 @@ func TestScanDevice(t *testing.T) {
 }
 
 func TestScanOS(t *testing.T) {
+	t.Skip()
 	s := NewScanner()
 	b, _ := ioutil.ReadFile("fixtures/os.csv")
 	records, _ := csv.NewReader(bytes.NewBuffer(b)).ReadAll()
@@ -49,8 +50,6 @@ func TestScanOS(t *testing.T) {
 		}
 	}
 }
-
-
 
 func BenchmarkScan(b *testing.B) {
 	s := NewScanner()
