@@ -7,8 +7,8 @@ import (
 	"unicode/utf8"
 )
 
-// eof is an internal EOF marker.
-var eof = errors.New("eof")
+// errEOF is an internal EOF marker.
+var errEOF = errors.New("eof")
 
 // Scanner is a user agent tokenizer.
 type Scanner struct {
@@ -19,21 +19,21 @@ type Scanner struct {
 	size      int
 	prevstart int
 	mobile    bool
-	browsers  []*Browser
-	devices   []*Device
-	oses      []*OS
+	browsers  []*browser
+	devices   []*device
+	oses      []*os
 }
 
 // NewScanner creates a new user agent scanner.
 func NewScanner() *Scanner {
 	return &Scanner{
-		browsers: make([]*Browser, MaxRank),
-		devices:  make([]*Device, MaxRank),
-		oses:     make([]*OS, MaxRank),
+		browsers: make([]*browser, maxRank),
+		devices:  make([]*device, maxRank),
+		oses:     make([]*os, maxRank),
 	}
 }
 
-// Scan scans a user agent string for device information.
+// ScanBytes scans a user agent byte slice for device information.
 func (s *Scanner) ScanBytes(b []byte) (*UserAgent, error) {
 	var ua = new(UserAgent)
 	s.buf = b
@@ -43,7 +43,7 @@ func (s *Scanner) ScanBytes(b []byte) (*UserAgent, error) {
 	// Iterate over each word in the byte slice.
 	for {
 		unigram, bigram, err := s.readNgrams()
-		if err == eof {
+		if err == errEOF {
 			break
 		} else if err != nil {
 			return nil, err
@@ -62,8 +62,8 @@ func (s *Scanner) ScanBytes(b []byte) (*UserAgent, error) {
 	// Find browser by rank level.
 	for _, browser := range s.browsers {
 		if browser != nil {
-			ua.Browser.Type = browser.Type
-			ua.Browser.Name = browser.Name
+			ua.Browser.Type = browser.typ
+			ua.Browser.Name = browser.name
 			break
 		}
 	}
@@ -71,7 +71,7 @@ func (s *Scanner) ScanBytes(b []byte) (*UserAgent, error) {
 	// Find device by rank level.
 	for _, device := range s.devices {
 		if device != nil {
-			ua.Device.Type = device.Type
+			ua.Device.Type = device.typ
 			break
 		}
 	}
@@ -79,8 +79,8 @@ func (s *Scanner) ScanBytes(b []byte) (*UserAgent, error) {
 	// Find OS by rank level.
 	for _, os := range s.oses {
 		if os != nil {
-			ua.OS.Name = os.Name
-			ua.OS.Version = os.Version
+			ua.OS.Name = os.name
+			ua.OS.Version = os.version
 			break
 		}
 	}
@@ -113,7 +113,7 @@ func (s *Scanner) Scan(str string) (*UserAgent, error) {
 // read retrieves the next rune from the string.
 func (s *Scanner) read() error {
 	if s.idx >= s.buflen {
-		return eof
+		return errEOF
 	}
 
 	// Read a single byte and then determine if utf8 decoding is needed.
@@ -139,7 +139,7 @@ func (s *Scanner) readNgrams() ([]byte, []byte, error) {
 	var index int
 	start := s.idx
 	for {
-		if err := s.read(); err == eof {
+		if err := s.read(); err == errEOF {
 			break
 		}
 
@@ -157,7 +157,7 @@ func (s *Scanner) readNgrams() ([]byte, []byte, error) {
 
 	// If nothing was read then it's EOF.
 	if s.idx == start {
-		return nil, nil, eof
+		return nil, nil, errEOF
 	}
 
 	unigram := s.buf[start:s.idx]
@@ -168,8 +168,8 @@ func (s *Scanner) readNgrams() ([]byte, []byte, error) {
 
 // match checks a unigram against the list of mobile tokens.
 func (s *Scanner) matchMobile(unigram []byte) {
-	for _, mobile := range Mobiles {
-		if bytes.Equal(unigram, mobile.Token) {
+	for _, mobile := range mobiles {
+		if bytes.Equal(unigram, mobile.token) {
 			s.mobile = true
 		}
 	}
@@ -177,27 +177,27 @@ func (s *Scanner) matchMobile(unigram []byte) {
 
 // matchBrowser checks a unigram and bigram against the list of browser tokens.
 func (s *Scanner) matchBrowser(unigram []byte, bigram []byte) {
-	for _, browser := range Browsers {
-		if bytes.Equal(unigram, browser.Token) || bytes.Equal(bigram, browser.Token) {
-			s.browsers[browser.Rank] = browser
+	for _, browser := range browsers {
+		if bytes.Equal(unigram, browser.token) || bytes.Equal(bigram, browser.token) {
+			s.browsers[browser.rank] = browser
 		}
 	}
 }
 
 // matchDevice checks a unigram and bigram against the list of device tokens.
 func (s *Scanner) matchDevice(unigram []byte, bigram []byte) {
-	for _, device := range Devices {
-		if bytes.Equal(unigram, device.Token) || bytes.Equal(bigram, device.Token) {
-			s.devices[device.Rank] = device
+	for _, device := range devices {
+		if bytes.Equal(unigram, device.token) || bytes.Equal(bigram, device.token) {
+			s.devices[device.rank] = device
 		}
 	}
 }
 
 // matchOS checks a unigram and bigram against the list of OS tokens.
 func (s *Scanner) matchOS(unigram []byte, bigram []byte) {
-	for _, os := range OSes {
-		if bytes.Equal(unigram, os.Token) || bytes.Equal(bigram, os.Token) {
-			s.oses[os.Rank] = os
+	for _, os := range oses {
+		if bytes.Equal(unigram, os.token) || bytes.Equal(bigram, os.token) {
+			s.oses[os.rank] = os
 		}
 	}
 }
@@ -209,17 +209,17 @@ func (s *Scanner) reset() {
 	s.prevstart = 0
 	s.mobile = false
 
-	for i, _ := range s.browsers {
+	for i := range s.browsers {
 		s.browsers[i] = nil
 	}
 }
 
-// Scan extracts properties from a user agent byte slice.
+// ScanBytes extracts properties from a user agent byte slice.
 func ScanBytes(b []byte) (*UserAgent, error) {
 	return NewScanner().ScanBytes(b)
 }
 
-// ScanString extracts properties from a user agent string.
+// Scan extracts properties from a user agent string.
 func Scan(str string) (*UserAgent, error) {
 	return NewScanner().Scan(str)
 }

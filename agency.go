@@ -6,16 +6,17 @@ import (
 	"strconv"
 )
 
-const MaxRank = 5
+// maxRank is the highest rank that can be used by the data files.
+const maxRank = 5
 
-type Browser struct {
-	Rank  int
-	Type  string
-	Name  string
-	Token []byte
+type browser struct {
+	rank  int
+	typ   string
+	name  string
+	token []byte
 }
 
-var Browsers []*Browser
+var browsers []*browser
 
 func init() {
 	data, _ := browser_csv()
@@ -25,17 +26,17 @@ func init() {
 	}
 	for _, record := range records {
 		rank, _ := strconv.Atoi(record[0])
-		Browsers = append(Browsers, &Browser{rank, record[1], record[2], []byte(record[3])})
+		browsers = append(browsers, &browser{rank, record[1], record[2], []byte(record[3])})
 	}
 }
 
-type Device struct {
-	Rank  int
-	Type  string
-	Token []byte
+type device struct {
+	rank  int
+	typ   string
+	token []byte
 }
 
-var Devices []*Device
+var devices []*device
 
 func init() {
 	data, _ := device_csv()
@@ -45,15 +46,15 @@ func init() {
 	}
 	for _, record := range records {
 		rank, _ := strconv.Atoi(record[0])
-		Devices = append(Devices, &Device{rank, record[1], []byte(record[2])})
+		devices = append(devices, &device{rank, record[1], []byte(record[2])})
 	}
 }
 
-type Mobile struct {
-	Token []byte
+type mobile struct {
+	token []byte
 }
 
-var Mobiles []*Mobile
+var mobiles []*mobile
 
 func init() {
 	data, _ := mobile_csv()
@@ -62,18 +63,18 @@ func init() {
 		panic("parse error (mobile.csv): " + err.Error())
 	}
 	for _, record := range records {
-		Mobiles = append(Mobiles, &Mobile{[]byte(record[0])})
+		mobiles = append(mobiles, &mobile{[]byte(record[0])})
 	}
 }
 
-type OS struct {
-	Rank    int
-	Name    string
-	Version string
-	Token   []byte
+type os struct {
+	rank    int
+	name    string
+	version string
+	token   []byte
 }
 
-var OSes []*OS
+var oses []*os
 
 func init() {
 	data, _ := os_csv()
@@ -83,6 +84,6 @@ func init() {
 	}
 	for _, record := range records {
 		rank, _ := strconv.Atoi(record[0])
-		OSes = append(OSes, &OS{rank, record[1], record[2], []byte(record[3])})
+		oses = append(oses, &os{rank, record[1], record[2], []byte(record[3])})
 	}
 }
