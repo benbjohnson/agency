@@ -1,20 +1,9 @@
-DATASRC=$(wildcard data/*.csv)
-DATABIN=$(patsubst %,%.go,${DATASRC})
+bindata.go: data/%.csv
+	go-bindata -pkg=agency -prefix=data data
 
-default:
-	@echo "usage:"
-	@echo "    make bindata"
-	@echo
+data/%.csv:
+	
+test: bindata.go
+	go test -v
 
-bindata: data
-
-data: $(DATABIN)
-
-data/%.csv.go: data/%.csv
-	rm -f data/$*.csv.go
-	cat data/$*.csv | go-bindata -func $(subst .,_,$*)_csv -pkg data | gofmt > data/$*.csv.go
-
-clean:
-	rm $(DATABIN)
-
-.PHONY: clean data
+.PHONY: test

@@ -5,8 +5,6 @@ import (
 	"errors"
 	"unicode"
 	"unicode/utf8"
-
-	"github.com/benbjohnson/agency/data"
 )
 
 // eof is an internal EOF marker.
@@ -14,24 +12,24 @@ var eof = errors.New("eof")
 
 // Scanner is a user agent tokenizer.
 type Scanner struct {
-	c      rune
-	buf    []byte
-	buflen int
-	idx    int
-	size   int
+	c         rune
+	buf       []byte
+	buflen    int
+	idx       int
+	size      int
 	prevstart int
-	mobile bool
-	browsers []*data.Browser
-	devices []*data.Device
-	oses []*data.OS
+	mobile    bool
+	browsers  []*Browser
+	devices   []*Device
+	oses      []*OS
 }
 
 // NewScanner creates a new user agent scanner.
 func NewScanner() *Scanner {
 	return &Scanner{
-		browsers: make([]*data.Browser, data.MaxRank),
-		devices: make([]*data.Device, data.MaxRank),
-		oses: make([]*data.OS, data.MaxRank),
+		browsers: make([]*Browser, MaxRank),
+		devices:  make([]*Device, MaxRank),
+		oses:     make([]*OS, MaxRank),
 	}
 }
 
@@ -170,7 +168,7 @@ func (s *Scanner) readNgrams() ([]byte, []byte, error) {
 
 // match checks a unigram against the list of mobile tokens.
 func (s *Scanner) matchMobile(unigram []byte) {
-	for _, mobile := range data.Mobiles {
+	for _, mobile := range Mobiles {
 		if bytes.Equal(unigram, mobile.Token) {
 			s.mobile = true
 		}
@@ -179,7 +177,7 @@ func (s *Scanner) matchMobile(unigram []byte) {
 
 // matchBrowser checks a unigram and bigram against the list of browser tokens.
 func (s *Scanner) matchBrowser(unigram []byte, bigram []byte) {
-	for _, browser := range data.Browsers {
+	for _, browser := range Browsers {
 		if bytes.Equal(unigram, browser.Token) || bytes.Equal(bigram, browser.Token) {
 			s.browsers[browser.Rank] = browser
 		}
@@ -188,7 +186,7 @@ func (s *Scanner) matchBrowser(unigram []byte, bigram []byte) {
 
 // matchDevice checks a unigram and bigram against the list of device tokens.
 func (s *Scanner) matchDevice(unigram []byte, bigram []byte) {
-	for _, device := range data.Devices {
+	for _, device := range Devices {
 		if bytes.Equal(unigram, device.Token) || bytes.Equal(bigram, device.Token) {
 			s.devices[device.Rank] = device
 		}
@@ -197,7 +195,7 @@ func (s *Scanner) matchDevice(unigram []byte, bigram []byte) {
 
 // matchOS checks a unigram and bigram against the list of OS tokens.
 func (s *Scanner) matchOS(unigram []byte, bigram []byte) {
-	for _, os := range data.OSes {
+	for _, os := range OSes {
 		if bytes.Equal(unigram, os.Token) || bytes.Equal(bigram, os.Token) {
 			s.oses[os.Rank] = os
 		}
