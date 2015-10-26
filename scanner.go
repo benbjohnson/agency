@@ -212,6 +212,10 @@ func (s *Scanner) reset() {
 	for i := range s.browsers {
 		s.browsers[i] = nil
 	}
+
+	for i := range s.oses {
+		s.oses[i] = nil
+	}
 }
 
 // ScanBytes extracts properties from a user agent byte slice.

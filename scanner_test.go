@@ -3,7 +3,6 @@ package agency
 import (
 	"bytes"
 	"encoding/csv"
-	"fmt"
 	"io/ioutil"
 	"testing"
 )
@@ -15,10 +14,10 @@ func TestScanBrowser(t *testing.T) {
 	for i, record := range records {
 		ua, _ := s.Scan(record[2])
 		if ua.Browser.Type != record[0] {
-			t.Fatalf("[Line #%d], got %q, wanted %q", i+1, record[0], ua.Browser.Type)
+			t.Fatalf("[Line #%d], got %q, wanted %q", i+1, ua.Browser.Type, record[0])
 		}
 		if ua.Browser.Name != record[1] {
-			t.Fatalf("[Line #%d], got %q, wanted %q", i+1, record[0], ua.Browser.Name)
+			t.Fatalf("[Line #%d], got %q, wanted %q", i+1, ua.Browser.Name, record[0])
 		}
 	}
 }
@@ -30,23 +29,21 @@ func TestScanDevice(t *testing.T) {
 	for i, record := range records {
 		ua, _ := s.Scan(record[1])
 		if ua.Device.Type != record[0] {
-			t.Fatalf("[Line #%d], got %q, wanted %q", i+1, record[0], ua.Device.Type)
+			t.Fatalf("[Line #%d], got %q, wanted %q", i+1, ua.Device.Type, record[0])
 		}
 	}
 }
 
 func TestScanOS(t *testing.T) {
-	s := NewScanner()
 	b, _ := ioutil.ReadFile("fixtures/os.csv")
 	records, _ := csv.NewReader(bytes.NewBuffer(b)).ReadAll()
+	s := NewScanner()
 	for i, record := range records {
 		ua, _ := s.Scan(record[2])
 		if ua.OS.Name != record[0] {
-			fmt.Println(record[0])
 			t.Fatalf("[Line #%d], got %q, wanted %q", i+1, ua.OS.Name, record[0])
 		}
 		if ua.OS.Version != record[1] {
-			fmt.Println(record[1])
 			t.Fatalf("[Line #%d], got %q, wanted %q", i+1, ua.OS.Version, record[1])
 		}
 	}
