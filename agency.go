@@ -67,14 +67,14 @@ func init() {
 	}
 }
 
-type os struct {
+type aos struct {
 	rank    int
 	name    string
 	version string
 	token   []byte
 }
 
-var oses []*os
+var oses []*aos
 
 func init() {
 	data, _ := os_csv()
@@ -84,6 +84,6 @@ func init() {
 	}
 	for _, record := range records {
 		rank, _ := strconv.Atoi(record[0])
-		oses = append(oses, &os{rank, record[1], record[2], []byte(record[3])})
+		oses = append(oses, &aos{rank, record[1], record[2], []byte(record[3])})
 	}
 }
