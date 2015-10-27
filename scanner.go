@@ -213,6 +213,10 @@ func (s *Scanner) reset() {
 		s.browsers[i] = nil
 	}
 
+	for i := range s.devices {
+		s.devices[i] = nil
+	}
+
 	for i := range s.oses {
 		s.oses[i] = nil
 	}

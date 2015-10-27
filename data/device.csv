@@ -1,14 +1,61 @@
+0,Game console,Nintendo
+0,Game console,Playstation
+0,Game console,PlayStation
+0,Game console,Xbox
+0,Game console,OUYA
 4,Personal computer,Windows
 4,Personal computer,Macintosh
 4,Personal computer,X11
 0,Tablet,iPad
+0,Tablet,PlayBook
+0,Tablet,Kindle
+0,Tablet,Pad
+0,Tablet,SonySGP321
+0,Tablet,SGPT12
+0,Tablet,Tablet
+0,Tablet,SGP311
+1,Tablet,Silk
+0,Tablet,SurfTab7.0
+0,Tablet,Tablet/15165
+0,Tablet,10 Plus
+0,Tablet,SmartTab10
+0,Tablet,SmartTab
+0,Tablet,ViewPad
+0,Tablet,GT-P7510
+0,Tablet,GT-N8005
+0,Tablet,GT-P3105
+0,Tablet,GT-P6810
+0,Tablet,SPH-P500
+0,Tablet,SHW-M380W
+0,Tablet,SHW-M305W
+0,Tablet,SHV-E230K
+0,Tablet,PocketBook
+0,Tablet,SURFpad
+0,Tablet,MZ601
+0,Tablet,Xoom
+0,Tablet,MZ616
+0,Tablet,Lenovo A1-32AB0
+0,Tablet,IdeaTab_A1107
+0,Tablet,SmartTabII7
+0,Tablet,LG-F200S
+0,Tablet,LG-F200K
+0,Tablet,LG-F200L
+0,Tablet,MediaPad
+0,Tablet,PG09410
+0,Tablet,Nexus 10
+0,Tablet,L-06C
+0,Tablet,hpwOS/3.0.5
+0,Tablet,K1
+0,Tablet,IdeaTabA2109A
+0,Tablet,Puffin
+1,Tablet,
 0,Smartphone,iPhone
 0,Smartphone,GT-i9500
+0,Smartphone,SAMSUNG-GT-i9500/1.0
+0,Smartphone,A80KSC
 0,Smartphone,Windows Phone
-0,Game console,Nintendo
-0,Game console,Playstation
-0,Game console,Xbox
-0,Game console,OUYA
+0,Smart TV,iTunes-AppleTV
+0,Smart TV,TV-HDMI-KB-01 Build
 0,Smart TV,SmartTV2013
 0,Smart TV,Escape
 0,Smart TV,SMART-TV
@@ -24,6 +71,7 @@
 0,Smart TV,Espial
 0,Smart TV,NETTV
 0,Smart TV,Roku
+0,Smart TV,SCREEN
 0,Wearable computer,Glass
 0,PDA,PalmOS
 0,PDA,PalmSource
