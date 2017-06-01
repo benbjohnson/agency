@@ -3,11 +3,8 @@ package agency
 import (
 	"bytes"
 	"encoding/csv"
-	"fmt"
 	"io/ioutil"
 	"testing"
-
-	"github.com/stretchr/testify/assert"
 )
 
 func TestScanBrowser(t *testing.T) {
@@ -16,10 +13,11 @@ func TestScanBrowser(t *testing.T) {
 	records, _ := csv.NewReader(bytes.NewBuffer(b)).ReadAll()
 	for i, record := range records {
 		ua, _ := s.Scan(record[2])
-		istype := assert.Equal(t, record[0], ua.Browser.Type, fmt.Sprintf("Line #%d", i+1))
-		isname := assert.Equal(t, record[1], ua.Browser.Name, fmt.Sprintf("Line #%d", i+1))
-		if !isname || !istype {
-			break
+		if ua.Browser.Type != record[0] {
+			t.Fatalf("[Line #%d], got %q, wanted %q", i+1, ua.Browser.Type, record[0])
+		}
+		if ua.Browser.Name != record[1] {
+			t.Fatalf("[Line #%d], got %q, wanted %q", i+1, ua.Browser.Name, record[0])
 		}
 	}
 }
@@ -30,23 +28,23 @@ func TestScanDevice(t *testing.T) {
 	records, _ := csv.NewReader(bytes.NewBuffer(b)).ReadAll()
 	for i, record := range records {
 		ua, _ := s.Scan(record[1])
-		if !assert.Equal(t, record[0], ua.Device.Type, fmt.Sprintf("Line #%d", i+1)) {
-			break
+		if ua.Device.Type != record[0] {
+			t.Fatalf("[Line #%d], got %q, wanted %q", i+1, ua.Device.Type, record[0])
 		}
 	}
 }
 
 func TestScanOS(t *testing.T) {
-	t.Skip()
-	s := NewScanner()
 	b, _ := ioutil.ReadFile("fixtures/os.csv")
 	records, _ := csv.NewReader(bytes.NewBuffer(b)).ReadAll()
+	s := NewScanner()
 	for i, record := range records {
 		ua, _ := s.Scan(record[2])
-		isname := assert.Equal(t, record[0], ua.OS.Name, fmt.Sprintf("Line #%d", i+1))
-		isversion := assert.Equal(t, record[1], ua.OS.Version, fmt.Sprintf("Line #%d", i+1))
-		if !isname || !isversion {
-			break
+		if ua.OS.Name != record[0] {
+			t.Fatalf("[Line #%d], got %q, wanted %q", i+1, ua.OS.Name, record[0])
+		}
+		if ua.OS.Version != record[1] {
+			t.Fatalf("[Line #%d], got %q, wanted %q", i+1, ua.OS.Version, record[1])
 		}
 	}
 }

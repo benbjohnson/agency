@@ -21,7 +21,7 @@ type Scanner struct {
 	mobile    bool
 	browsers  []*browser
 	devices   []*device
-	oses      []*os
+	oses      []*aos
 }
 
 // NewScanner creates a new user agent scanner.
@@ -29,7 +29,7 @@ func NewScanner() *Scanner {
 	return &Scanner{
 		browsers: make([]*browser, maxRank),
 		devices:  make([]*device, maxRank),
-		oses:     make([]*os, maxRank),
+		oses:     make([]*aos, maxRank),
 	}
 }
 
@@ -211,6 +211,14 @@ func (s *Scanner) reset() {
 
 	for i := range s.browsers {
 		s.browsers[i] = nil
+	}
+
+	for i := range s.devices {
+		s.devices[i] = nil
+	}
+
+	for i := range s.oses {
+		s.oses[i] = nil
 	}
 }
 

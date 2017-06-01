@@ -19,8 +19,8 @@ type browser struct {
 var browsers []*browser
 
 func init() {
-	data, _ := browser_csv()
-	records, err := csv.NewReader(bytes.NewBuffer(data)).ReadAll()
+	data, _ := dataBrowserCsv()
+	records, err := csv.NewReader(bytes.NewBuffer(data.bytes)).ReadAll()
 	if err != nil {
 		panic("parse error (browser.csv): " + err.Error())
 	}
@@ -39,8 +39,8 @@ type device struct {
 var devices []*device
 
 func init() {
-	data, _ := device_csv()
-	records, err := csv.NewReader(bytes.NewBuffer(data)).ReadAll()
+	data, _ := dataDeviceCsv()
+	records, err := csv.NewReader(bytes.NewBuffer(data.bytes)).ReadAll()
 	if err != nil {
 		panic("parse error (device.csv): " + err.Error())
 	}
@@ -57,8 +57,8 @@ type mobile struct {
 var mobiles []*mobile
 
 func init() {
-	data, _ := mobile_csv()
-	records, err := csv.NewReader(bytes.NewBuffer(data)).ReadAll()
+	data, _ := dataMobileCsv()
+	records, err := csv.NewReader(bytes.NewBuffer(data.bytes)).ReadAll()
 	if err != nil {
 		panic("parse error (mobile.csv): " + err.Error())
 	}
@@ -67,23 +67,23 @@ func init() {
 	}
 }
 
-type os struct {
+type aos struct {
 	rank    int
 	name    string
 	version string
 	token   []byte
 }
 
-var oses []*os
+var oses []*aos
 
 func init() {
-	data, _ := os_csv()
-	records, err := csv.NewReader(bytes.NewBuffer(data)).ReadAll()
+	data, _ := dataOsCsv()
+	records, err := csv.NewReader(bytes.NewBuffer(data.bytes)).ReadAll()
 	if err != nil {
 		panic("parse error (os.csv): " + err.Error())
 	}
 	for _, record := range records {
 		rank, _ := strconv.Atoi(record[0])
-		oses = append(oses, &os{rank, record[1], record[2], []byte(record[3])})
+		oses = append(oses, &aos{rank, record[1], record[2], []byte(record[3])})
 	}
 }
